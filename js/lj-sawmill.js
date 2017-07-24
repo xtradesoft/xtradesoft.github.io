@@ -11,7 +11,7 @@
 $(document).ready(function (){
 
   // backstretch
-  $("header").backstretch("img/header-1.jpg");
+  $(".header").backstretch("img/header-1.jpg");
   $(".download").backstretch("img/download.jpg");
   $(".quote-slider").backstretch("img/quote-2.jpg");
 

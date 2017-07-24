@@ -118,6 +118,12 @@
     font-weight: 600;
   }
 
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.2;
+}
+
 	.preloader {
 		background: #fff url('../img/preloader.svg') no-repeat center center;
 		bottom: 0;
@@ -425,7 +431,7 @@
 
 /* 4. HEADER SECTION */
 
-  header {
+  .header {
     height: 950px;
     z-index: 1 !important;
   }
