@@ -1,0 +1,164 @@
+/**
+ * File Name: deep-orange.css
+ */
+
+/* Links Colors */
+a {
+	color: #ed4510;
+}
+
+a:focus {
+	color: #ed4510;
+}
+
+h1 a:hover, 
+h2 a:hover, 
+h3 a:hover, 
+h4 a:hover, 
+h5 a:hover, 
+h6 a:hover {
+	color: #ed4510;
+}
+
+/* Website Loading */
+.la-ball-fall {
+	color: #ed4510 !important;
+}
+
+/* Readmore Link */
+a.readmore-link:hover {
+	color: #ed4510;
+}
+
+/* Colored Text */
+.colored {
+	color: #ed4510;
+}
+
+/* Forms */
+input.submit {
+	background: #ed4510;
+}
+
+input.submit:hover {
+	background: #db4111;
+}
+
+#header-form .form-icon {
+	background: #ed4510;
+}
+
+/* Header Colored Background [ demo ] */
+.header-colored-background.demo {
+	background: rgba(237, 69, 16, 0.87) !important;
+}
+
+/* Transparent Colorful Button */
+.button.transparent-colorful,
+.button.hover-transparent-colorful:hover {
+	color: #ed4510;
+	border-color: #ed4510;
+}
+
+/* Colorful Button */
+.button.colorful,
+.button.hover-colorful:hover {
+	background: #ed4510;
+	border-color: #ed4510;
+}
+
+/* Header Featured Title */
+.header-featured-title h2:after {
+	background: #ed4510;
+}
+
+/* Text Logo */
+.logo-and-nav-sticky-state .logo h3 strong	{
+	color: #ed4510;
+}
+
+.logo h3 strong	{
+	color: #ed4510;
+}
+
+/* Main Nav */
+.main-menu > li > a:hover {
+	color: #ed4510;
+}
+
+.main-menu > li:hover > a {
+	color: #ed4510;
+}
+
+.main-menu > li > a.current {
+	color: #ed4510;
+}
+
+/* Flat Section Title */
+.flat-section-title:after {
+	background: #ed4510;
+}
+
+/* Testmonials */
+.single-testmonial-image {
+	border-color: #ed4510;
+}
+
+/* Footer Logo */
+.footer-logo-title {
+	color: #ed4510;
+}
+
+/* Colorful Icon */
+.icon.colorful i {
+	box-shadow: inset 0 0 0 2px #ed4510;
+}
+
+.icon.colorful i:after {
+	background-color: #ed4510;
+}
+
+/* Hover Colorful */
+[class*="info-box"]:hover .info-box-icon.hover-colorful i {
+	box-shadow: inset 0 0 0 2px #ed4510;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-colorful i:after {
+	background-color: #ed4510;
+}
+
+/* Pricing Table */
+.pricing-table-column-header .column-price span {
+	color: #ed4510;
+}
+
+.pricing-table-column-footer a:hover {
+	background: #ed4510;
+	border-color: #ed4510;
+}
+
+.featured-pricing-table-column .pricing-table-column-header .column-price {
+	background: #ed4510;
+}
+
+.featured-pricing-table-column .pricing-table-column-footer a {
+	background: #ed4510;
+	border-color: #ed4510;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,164 @@
+/**
+ * File Name: pink.css
+ */
+
+/* Links Colors */
+a {
+	color: #e91e63;
+}
+
+a:focus {
+	color: #e91e63;
+}
+
+h1 a:hover, 
+h2 a:hover, 
+h3 a:hover, 
+h4 a:hover, 
+h5 a:hover, 
+h6 a:hover {
+	color: #e91e63;
+}
+
+/* Website Loading */
+.la-ball-fall {
+	color: #e91e63 !important;
+}
+
+/* Readmore Link */
+a.readmore-link:hover {
+	color: #e91e63;
+}
+
+/* Colored Text */
+.colored {
+	color: #e91e63;
+}
+
+/* Forms */
+input.submit {
+	background: #e91e63;
+}
+
+input.submit:hover {
+	background: #d5215e;
+}
+
+#header-form .form-icon {
+	background: #e91e63;
+}
+
+/* Header Colored Background [ demo ] */
+.header-colored-background.demo {
+	background: rgba(233, 30, 99, 0.87) !important;
+}
+
+/* Transparent Colorful Button */
+.button.transparent-colorful,
+.button.hover-transparent-colorful:hover {
+	color: #e91e63;
+	border-color: #e91e63;
+}
+
+/* Colorful Button */
+.button.colorful,
+.button.hover-colorful:hover {
+	background: #e91e63;
+	border-color: #e91e63;
+}
+
+/* Header Featured Title */
+.header-featured-title h2:after {
+	background: #e91e63;
+}
+
+/* Text Logo */
+.logo-and-nav-sticky-state .logo h3 strong	{
+	color: #e91e63;
+}
+
+.logo h3 strong	{
+	color: #e91e63;
+}
+
+/* Main Nav */
+.main-menu > li > a:hover {
+	color: #e91e63;
+}
+
+.main-menu > li:hover > a {
+	color: #e91e63;
+}
+
+.main-menu > li > a.current {
+	color: #e91e63;
+}
+
+/* Flat Section Title */
+.flat-section-title:after {
+	background: #e91e63;
+}
+
+/* Testmonials */
+.single-testmonial-image {
+	border-color: #e91e63;
+}
+
+/* Footer Logo */
+.footer-logo-title {
+	color: #e91e63;
+}
+
+/* Colorful Icon */
+.icon.colorful i {
+	box-shadow: inset 0 0 0 2px #e91e63;
+}
+
+.icon.colorful i:after {
+	background-color: #e91e63;
+}
+
+/* Hover Colorful */
+[class*="info-box"]:hover .info-box-icon.hover-colorful i {
+	box-shadow: inset 0 0 0 2px #e91e63;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-colorful i:after {
+	background-color: #e91e63;
+}
+
+/* Pricing Table */
+.pricing-table-column-header .column-price span {
+	color: #e91e63;
+}
+
+.pricing-table-column-footer a:hover {
+	background: #e91e63;
+	border-color: #e91e63;
+}
+
+.featured-pricing-table-column .pricing-table-column-header .column-price {
+	background: #e91e63;
+}
+
+.featured-pricing-table-column .pricing-table-column-footer a {
+	background: #e91e63;
+	border-color: #e91e63;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

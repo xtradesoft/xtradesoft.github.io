@@ -1,0 +1,1032 @@
+
+/*	=================================================================================================
+ *
+ *	Template Name: CareFree																			-
+ *	File Name: responsive-specifications.css														-
+ *	Author: Morad																					-
+ *	Description: This file is containing almost the all responsive code settings of the template	-
+ *				 for all widths needed for optimizing how the elements and layout needs to be 		-
+ *				 in proper view for different widths of various devices. This file is separated 	-
+ *				 to detailed section to be easy to be handled in a quick way.						-
+ *				 For the current file, it's divided as listed below.								-
+ *	
+ *	=================================================================================================
+ *	
+ *	responsive-specifications.css file is divided as the following: 
+ *	
+ *	( 1st ) - Width from 1380px to 0
+ *	( 2nd ) - Width from 1380px to 768px
+ *	( 3rd ) - Width from 767px to 0
+ *	( 4th ) - Width from 767px to 480px
+ *	( 5th ) - Width from 480px to 0
+ *	( 6th ) - Bootstrap Responsive Changes needed for few elements 
+ *	
+*/
+
+
+
+
+
+
+
+
+/*	-------------------------------------------------------------------------------
+ *	( 1st ) - Width from 1380px to 0 	 								   		  -
+ *	-------------------------------------------------------------------------------
+ *  
+ *  This part contains the all changes that needed for elements between width of
+ *  1380px and 0
+ *  
+ *  It's divided to the following sections:
+ *  
+ *	   |
+ *	   |-->  [ 1 ] - Header
+ *	   |-->  [ 2 ] - 
+ *	   |-->  [ 3 ] -  
+ *	   |-->  [ 4 ] - 
+ *	   |-->  [ 5 ] - 
+ *	   |-->  [ 6 ] -  
+ *	   |-->  [ 7 ] -  
+ *  
+*/
+
+
+@media only screen
+and (max-width : 1380px) {
+
+
+
+/*  [ 1 ] - Header 
+ *	~~~~~~~~~~~~~~~~
+ */
+
+/* Logo and Nav */
+
+#logo-and-nav {
+
+}
+
+/* About Us Images */
+
+.about-us-image-holder .about-us-iphone5s-image {
+	/*right: 30px;*/
+}
+
+/* Slider Featured Preview Info */
+
+.slider-featured-preview-info {
+
+}
+
+/* Slider Logo */
+
+.slider-logo {
+	margin-top: -72px;
+}
+
+.slider-logo img {
+	width: 130px;
+}
+
+/* Featured Title */
+
+.featured-title {
+	margin-top: -45px;
+}
+
+.big-title {
+	margin-top: 8px;
+}
+
+.big-title-content {
+	font-size: 80px;
+	line-height: 80px;
+}
+
+.big-title-content i {
+	font-size: 75px;
+	margin: 0 20px;
+}
+
+.small-title {
+	font-size: 16px;
+	letter-spacing: 4px;
+}
+
+.big-title span.left-lines, .big-title span.right-lines {
+	margin-top: -10px;
+}
+
+/* Header Bottom Message and Icon Go Bottom */
+
+.header-bottom-message-and-icon-go-bottom {
+	bottom: 35px;
+}
+
+
+
+
+
+}
+
+/*	-------------------------------------------------------------------------------
+ *	( 2nd ) - Width from 1380px to 768px  								   		  -
+ *	-------------------------------------------------------------------------------
+ *  
+ *  This part contains the all changes that needed for elements between width of
+ *  767px and 0
+ *  
+ *  It's divided to the following sections:
+ *  
+ *	   |
+ *	   |-->  [ 1 ] - Header
+ *	   |-->  [ 2 ] - 
+ *	   |-->  [ 3 ] -  
+ *	   |-->  [ 4 ] - 
+ *	   |-->  [ 5 ] - 
+ *	   |-->  [ 6 ] -  
+ *	   |-->  [ 7 ] -  
+ *  
+*/
+
+
+@media only screen
+and (max-width : 1380px)
+and (min-width : 768px) {
+	
+
+
+}
+
+
+
+
+
+
+
+/*	-------------------------------------------------------------------------------
+ *	( 3rd ) - Width from 767px to 0 	 								   		  -
+ *	-------------------------------------------------------------------------------
+ *  
+ *  This part contains the all changes that needed for elements between width of
+ *  767px and 0
+ *  
+ *  It's divided to the following sections:
+ *  
+ *	   |
+ *	   |-->  [ 1 ] - Header
+ *	   |-->  [ 2 ] - Super Slider
+ *	   |-->  [ 3 ] - General Contents
+ *	   |-->  [ 4 ] - 
+ *	   |-->  [ 5 ] - 
+ *	   |-->  [ 6 ] -  
+ *	   |-->  [ 7 ] -  
+ *  
+*/
+
+
+@media only screen
+and (max-width : 767px) {
+
+	
+/*  [ 1 ] - Header 
+ *	~~~~~~~~~~~~~~~~
+ */
+
+/* Logo and Nav */
+
+#logo-and-nav {
+
+}
+
+/* About Us Images */
+
+.about-us-image-holder .about-us-iphone5s-image {
+	/*right: 30px;*/
+}
+
+/* Slider Featured Preview Info */
+
+.slider-featured-preview-info {
+
+}
+
+/* Slider Logo */
+
+.slider-logo {
+	margin-top: -50px;
+}
+
+.slider-logo img {
+	width: 90px;
+}
+
+/* Featured Title */
+
+.featured-title {
+	margin-top: -35px;
+}
+
+.big-title {
+	margin-top: 6px;
+}
+
+.big-title-content {
+	font-size: 55px;
+	line-height: 55px;
+}
+
+.big-title-content i {
+	font-size: 50px;
+	margin: 0 15px;
+}
+
+.small-title {
+	font-size: 14px;
+	letter-spacing: 3px;
+}
+
+/* Left and Right 2 Lines */
+
+.big-title span.left-lines, .big-title span.left-lines:after, 
+.big-title span.right-lines, .big-title span.right-lines:after {
+	height: 4px;
+	width: 20px;
+	margin-left: -35px;
+	margin-top: -13px;
+}
+
+.big-title span.right-lines, .big-title span.right-lines:after {
+	margin-left: 15px;
+}
+
+.big-title span.left-lines:after {
+	margin-top: 8px;
+	margin-left: -10px;
+}
+
+.big-title span.right-lines:after {
+	margin-top: 8px;
+	margin-left: -10px;
+}
+
+
+/*  [ 2 ] - Super Slider 
+ *	~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+.super-slider-directions {
+	top: auto;
+	bottom: 90px;
+	margin: 0 auto;
+}
+
+.super-slider-directions a {
+    font-size: 25px;
+    line-height: 35px;
+    height: 40px;
+    width: 40px;
+    opacity: .4;
+}
+
+#header-featured-content .super-slider-directions a.prev {
+    left: 30px;
+}
+
+#header-featured-content .super-slider-directions a.next {
+    right: 30px;
+}
+
+.super-slider-directions a i {
+    line-height: 36px;
+}
+
+
+/*  [ 3 ] - General Contents 
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+
+/* Info Boxes */
+
+.info-box-style1, 
+.info-box-style2, 
+.info-box-style3, 
+.info-box-style4, 
+.info-box-style5, 
+.info-box-style6, 
+.info-box-style7, 
+.info-box-style8 {
+ 	padding-bottom: 50px;
+}
+
+ .row [class*="col-"] .info-box-style3 {
+ 
+ }
+
+ .row [class*="col-"]:last-child .info-box-style1,
+ .row [class*="col-"]:last-child .info-box-style2,
+ .row [class*="col-"]:last-child .info-box-style3,
+ .row [class*="col-"]:last-child .info-box-style4,
+ .row [class*="col-"]:last-child .info-box-style5,
+ .row [class*="col-"]:last-child .info-box-style6,
+ .row [class*="col-"]:last-child .info-box-style7,
+ .row [class*="col-"]:last-child .info-box-style8 {
+ 	padding-bottom: 0;
+ 	border-bottom: 3px solid #222;
+ }
+
+
+ /* Chart Counter */
+
+.chart-counter {
+	padding-bottom: 50px;
+}
+
+ .row [class*="col-"]:last-child .chart-counter {
+ 	padding-bottom: 0;
+ 	border-bottom: 3px solid #222;
+ }
+
+
+/* Numbers Counter */
+
+.numbers-counter {
+	padding-bottom: 50px;
+}
+
+ .row [class*="col-"]:last-child .numbers-counter {
+ 	padding-bottom: 0;
+ 	border-bottom: 3px solid #222;
+ }
+
+
+/* Contact Us Info Box */
+
+.contact-us-info-box {
+	padding-bottom: 40px;
+}
+
+ .row [class*="col-"]:last-child .contact-us-info-box {
+ 	padding-bottom: 0;
+ 	border-bottom: 3px solid #222;
+ }
+
+/* Contact Form */
+
+.contact-form input[type=text] {
+	width: 80% !important;
+}
+
+.contact-form .col-sm-6 > .single-input-line:first-child {
+	margin-top: 30px;
+}
+
+
+
+
+/* 
+	Old Responsive Settings
+------------------------------------------------ */
+
+/* 
+    LOGO    
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/* logo */
+
+a#logo {
+	text-align: center;
+	z-index: 1;
+	display: inherit;
+	text-align: center;
+	margin-top: 47px;	
+}
+
+a#logo img {
+/*	display: inline-block;	
+*/}
+
+.website-title-description {
+	padding-left: 0;
+	margin-left: 0;
+	border-left: none;
+	display: block;
+	margin-top: 10px;
+}
+
+
+	
+/* 
+    MAIN    
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/* content */
+
+/* page with right sidebar */
+
+.page-with-right-sidebar #content {
+	padding-right: 10px;
+	border-right: none;	
+}
+
+/* page with left sidebar */
+
+.page-with-left-sidebar #content {
+	padding-left: 10px;
+	border-left: none;	
+}
+
+/* page with right and left sidebar */
+
+.page-with-left-and-right-sidebar #content {
+	padding-right: 10px;
+	border-right: none;
+	padding-left: 10px;
+	border-left: none;
+}
+
+/* sidebar */
+
+.right-sidebar {
+	padding-left: 10px !important;
+	margin-top: 75px;	
+}
+
+.left-sidebar {
+	padding-right: 10px !important;
+	margin-bottom: 70px;	
+}
+
+
+
+
+/* 
+    PORTFOLIO    
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.portfolio-items-container li {
+	width: 50% !important;
+}
+
+
+/* 
+    PRICING TABLES    
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.pricing-table .pricing-table-column {
+	margin-bottom: 50px;	
+}
+
+.pricing-table .featured-pricing-table-column {
+	margin-top: 0;
+}
+
+
+
+/* 
+    TEASERS    
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.teaser {
+	margin-bottom: 50px;	
+}
+
+
+/* 
+    BUTTONS    
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.button {
+	margin-bottom: 10px;	
+}
+
+
+/* 
+    GENERIC    
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/* readmore link */
+
+a.readmore-link {
+	margin-bottom: 10px;	
+}
+
+
+}
+
+
+
+
+
+
+
+/*	-------------------------------------------------------------------------------
+ *	( 4th ) - Width from 767px to 480px  								   		  -
+ *	-------------------------------------------------------------------------------
+ *  
+ *  This part contains the all changes that needed for elements between width of
+ *  767px and 480px
+ *  
+ *  It's divided to the following sections:
+ *  
+ *	   |
+ *	   |-->  [ 1 ] - Header
+ *	   |-->  [ 2 ] - 
+ *	   |-->  [ 3 ] -  
+ *	   |-->  [ 4 ] - 
+ *	   |-->  [ 5 ] - 
+ *	   |-->  [ 6 ] -  
+ *	   |-->  [ 7 ] -  
+ *  
+*/
+
+
+@media only screen
+and (max-width : 767px)
+and (min-width : 480px) {
+	
+
+
+}
+
+
+
+
+
+/*	-------------------------------------------------------------------------------
+ *	( 5th ) - Width from 480px to 0 	 								   		  -
+ *	-------------------------------------------------------------------------------
+ *  
+ *  This part contains the all changes that needed for elements between width of
+ *  480px and 0
+ *  
+ *  It's divided to the following sections:
+ *  
+ *	   |
+ *	   |-->  [ 1 ] - Header
+ *	   |-->  [ 2 ] - 
+ *	   |-->  [ 3 ] -  
+ *	   |-->  [ 4 ] - 
+ *	   |-->  [ 5 ] - 
+ *	   |-->  [ 6 ] -  
+ *	   |-->  [ 7 ] -  
+ *  
+*/
+
+@media only screen
+and (max-width : 480px) {
+
+
+/*  [ 1 ] - Header 
+ *	~~~~~~~~~~~~~~~~
+ */
+
+
+/* About Us Images */
+
+.about-us-image-holder .about-us-iphone5s-image {
+	right: 26px !important;
+	bottom: -18px !important;
+	width: 81px !important;
+	margin-top: 100px !important;
+}
+
+/* Slider Featured Preview Info */
+
+.slider-featured-preview-info {
+
+}
+
+/* Slider Logo */
+
+.slider-logo {
+	margin-top: -40px;
+}
+
+.slider-logo img {
+	width: 70px;
+}
+
+/* Featured Title */
+
+.featured-title {
+	margin-top: -30px;
+}
+
+.big-title {
+	margin-top: 0px;
+}
+
+.big-title-content {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.big-title-content i {
+	font-size: 25px;
+	margin: 0 10px;
+}
+
+.small-title {
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+/* Left and Right 2 Lines */
+
+.big-title span.left-lines, .big-title span.left-lines:after, 
+.big-title span.right-lines, .big-title span.right-lines:after {
+	height: 3px;
+	width: 12px;
+	margin-left: -23px;
+	margin-top: -9px;
+}
+
+.big-title span.right-lines, .big-title span.right-lines:after {
+	margin-left: 10px;
+}
+
+.big-title span.left-lines:after {
+	margin-top: 5px;
+	margin-left: -6px;
+}
+
+.big-title span.right-lines:after {
+	margin-top: 5px;
+	margin-left: -6px;
+}
+
+/* Header Bottom Message and Icon Go Bottom */
+
+.header-bottom-message-and-icon-go-bottom {
+	bottom: 25px;
+}
+
+
+
+}
+
+
+
+
+
+/*	-------------------------------------------------------------------------------
+ *	( 6th ) - Bootstrap Responsive Changes needed for few elements		   		  -
+ *	-------------------------------------------------------------------------------
+ *  
+ *  This part contains the all changes that needed for elements for the Bootsrap
+ *  widths like iPhone image in About Us section
+ *  
+ *  It's divided to the following sections:
+ *  
+ *	   |
+ *	   |-->  [ 1 ] - Width between 1200px to 0
+ *	   |-->  [ 2 ] - Width between 992px to 0
+ *	   |-->  [ 3 ] - Width between 768px to 0
+ *  
+*/
+
+/*  [ 1 ] - Width between 1200px to 0 
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 1199px) {
+
+/* About Us Images */
+
+.about-us-image-holder .about-us-iphone5s-image {
+	right: 52px;
+	width: 185px;
+}
+
+/* Subscribe Section */
+
+.subscribe-section h2 {
+	font-size: 29px;
+}
+
+.subscribe-section .subheader {
+	font-size: 16px;
+}
+
+.subscribe-section form.subscribe-form {
+	top: 2px;
+}
+
+/* Subscribe Form */
+
+form.subscribe-form input[type="text"] {
+	width: 175px;
+}
+
+
+
+}
+
+
+/*  [ 2 ] - Width between 992px to 0 
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 991px) {
+
+/* About Us Images */
+
+.about-us-image-holder .about-us-iphone5s-image {
+	right: 42px;
+	bottom: -31px;
+	width: 140px;
+}
+
+/* Subscribe Form */
+
+form.subscribe-form input[type="text"] {
+	width: 220px;
+}
+
+form.subscribe-form input.submit {
+	margin: 7px 0 0;
+	float: right;
+}
+
+/* Blog Timeline */
+
+.blog-timeline {
+	width: 95%;
+}
+
+
+}
+
+
+/*  [ 3 ] - Width between 767px to 0 
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 767px) {
+
+/* About Us Images */
+
+.about-us-image-holder .about-us-iphone5s-image {
+	right: 42px;
+	bottom: -31px;
+	width: 140px;
+}
+
+/* Subscribe Section */
+
+.subscribe-section {
+	text-align: center;
+}
+
+/* Subscribe Form */
+
+.subscribe-section form.subscribe-form {
+	top: 5px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+form.subscribe-form input[type="text"] {
+	width: 230px;
+}
+
+form.subscribe-form input.submit {
+	margin: 0 0 0 7px;
+	float: none;
+}
+
+/* Blog Timeline */
+
+.blog-timeline {
+	margin-top: 100px;
+}
+
+/*  [ 1 ] - Blog Timeline Settings
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+.blog-timeline {
+	display: block;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 40px; 
+	padding-bottom: 5px;
+	/*overflow: hidden;*/
+	/*padding-bottom: 20px;*/
+}
+
+.blog-timeline:before {
+	content: "";
+	width: 1px;
+	margin-left: -2px;
+	height: 100%;
+	position: absolute;
+	background: #cfcfcf;
+	left: 30px;
+	top: 0;
+}
+
+
+/*  [ 2 ] - Monthly Date Title
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+.monthly-date-title {
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding: 0;
+	font-size: 18px;
+	font-weight: 300;
+	position: relative;
+	margin-bottom: 40px;
+	margin-top: 5px;
+	/* border: 1px solid #cfcfcf */
+}
+
+.monthly-date-title:first-child {
+		margin-top: -20px;
+}
+
+.monthly-date-title:last-child {
+		margin-bottom: 0;
+		padding-bottom: 30px;
+}
+
+.monthly-date-title span {
+	padding: 9px 18px;
+	background: #eaeaea;
+	display: inline-block;
+	border-radius: 3px;
+}
+
+
+/*  [ 3 ] - Blog Timeline List
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+ul.blog-timeline-list {
+	list-style: none outside;
+	display: inline-block;
+}
+
+ul.blog-timeline-list li {
+	margin-bottom: 30px;
+	width: 100%;
+	float: none !important;
+	top: 0 !important;
+	/*padding-bottom: 0 !important;*/
+}
+
+ul.blog-timeline-list li:nth-child(2n+1) {
+	float: left;
+	clear: left;
+}
+
+ul.blog-timeline-list li:nth-child(2n) {
+	float: right;
+	clear: right;
+	position: relative;
+	top: 90px;
+	/*margin-bottom: -60px;
+	margin-top: 90px;*/
+}
+
+ul.blog-timeline-list li:nth-child(2n):last-child {
+	padding-bottom: 35px;
+	margin-bottom: 0;
+}
+
+.blog-timeline .single-post {
+	padding: 0 0 0 74px !important;
+	margin: 0;
+	border: none;
+}
+
+
+/*  [ 4 ] - Single Post Timeline
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+.single-post-timeline {
+	display: block;
+	border: 1px solid #cfcfcf;
+	border-radius: 3px;
+}
+
+.single-post-timeline:before {
+	content: "";
+	border-right: 10px solid #cfcfcf;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: none;
+	display: inline-block;
+	position: absolute;
+	left: 65px !important;
+	top: 19px;
+	right: auto !important;
+}
+
+.single-post-timeline:after {
+	content: "";
+	border-right: 9px solid #fff;
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-left: none;
+	display: inline-block;
+	position: absolute;
+	left: 67px !important;
+	top: 20px;
+	right: auto !important;
+}
+
+/* For Single Post Timeline Right */
+
+ul.blog-timeline-list li .single-post-timeline:before {
+}
+
+ul.blog-timeline-list li .single-post-timeline:after {
+}
+
+
+/*  [ 5 ] - Post Format
+ *	~~~~~~~~~~~~~~~~~~~~~
+ */
+
+.single-post-timeline .post-format {
+	display: inline-block;
+	position: absolute;
+	right: 0 !important;
+	left: auto !important;
+	margin: -1px 0 0 0px !important;
+	border: 5px solid #fff;
+}
+
+.single-post-timeline .post-format a {
+	display: inline-block;
+	padding: 3px;
+	border: 1px solid #c5c5c5;
+	background: #fff;
+}
+
+.single-post-timeline .post-format a, .single-post-timeline .post-format i {
+
+}
+
+.single-post-timeline .post-format i {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.single-post-timeline:hover .post-format i {
+	background: #222;
+}
+
+.single-post-timeline:hover .post-format a {
+	border-color: #999;
+}
+
+ul.blog-timeline-list li .post-format {
+	margin-right: 0;
+	right: auto !important;
+	left: 0 !important;
+}
+
+
+}
+
+
+
+/*@media only screen
+and (max-height : 580px) {
+	#logo-and-nav {
+		margin-top: 100px;
+	}
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
