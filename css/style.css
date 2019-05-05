@@ -1748,6 +1748,15 @@
     padding-left: 0;
   }
 
+.features li {
+  text-align: left !important;
+}
+
+.brochure {
+  font-size: 1.2em !important;
+}
+
+
 /* 22. BREAKPOINTS */
 
   @media (max-width: 1199px) {
