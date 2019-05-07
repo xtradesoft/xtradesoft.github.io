@@ -1753,7 +1753,22 @@
 }
 
 .brochure {
-  font-size: 1.2em !important;
+  display: block;
+  outline: none;
+  width: 140px;
+  height: 80px;
+  padding: 15px 20px;
+  line-height: 1em;
+  background: #4c8fff;
+  color: #fff;
+  border: 1px solid #4c8fff;
+  border-radius: 3px;
+  margin: 0 0 20px auto;
+  transition: all 0.125s ease-in-out 0s;
+  -moz-transition: all 0.125s ease-in-out 0s;
+  -webkit-transition: all 0.125s ease-in-out 0s;
+  -o-transition: all 0.125s ease-in-out 0s;
+  -ms-transition: all 0.125s ease-in-out 0s;
 }
 
 
