@@ -2,41 +2,75 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Test Page</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <!--[if lt IE 7]>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Test Page</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- HINT: optional usage of Bootstrap 4  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <h1>Tournament Widget Demo</h1>
-    <div class="row">
-      <div class="col-md-6">
-          <div id="left">
+
+  <main class="bd-masthead" id="content" role="main">
+    <div class="container">
+      <div class="col-md-12 align-items-center">
+        <div class="card shadow-lg">
+          <div class="card-header">
+            <div>
+                <span class="nowrap brand-name">
+                  NE<img id="logo" src="https://www.nexxchange.com/assets/minimal/img/logo-xx.svg" alt="Nexxchange Golf" class="left" width="50px" >CHANGE
+                </span>
+              Tournament Widget Demo
+              </div>
           </div>
-      </div>
-      <div class="col-md-6">
-          <div id="right">
+          <div class="card-body">
+            <h5 class="card-title">Build your tournament information in your site without a hassle. </h5>
+
+            <hr />
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- HINT: here the widget will be rendered -->
+                  <div id="tournamentWidgetDataContainer"></div>
+                </div>
+              </div>
+            </div>
+            <!-- HINT: simple example for a today button -->
+            <button class="btn btn-warning" id="adjust-from-date" type="button">Today</button>
           </div>
+        </div>
       </div>
     </div>
-    <script src="https://devportal.nexxchange.com/assets/widgets/tournament-widget.js"></script>
-    <script>
-      renderTournamentWidget("left",{
-        slug : "gc-testclub-x-tradesoft",
-        lang : "de",
-        baseUrl : "https://devportal.nexxchange.com"
-      })
-      renderTournamentWidget("right",{
-        slug : "gc-testclub-x-tradesoft",
-        lang : "de",
-        baseUrl : "https://devportal.nexxchange.com"
-      })
-    </script>
-  </body>
+  </main>
+
+  <!-- HINT: here we include the widget code and we set the parameters -->
+  <script src="dist/tournament-widget.js"></script>
+  <script>
+    var widget = renderTournamentWidget("tournamentWidgetDataContainer",{
+      slug : "gc-testclub-x-tradesoft",
+      fromDate : new Date("2019-01-01"),
+      lang : "de",
+      maxResults : 10,
+      baseUrl: "https://devportal.nexxchange.com"
+    })
+
+    // HINT: adding an even handler so widget can react on date changes
+    document.getElementById("adjust-from-date").addEventListener("click", function(event) {
+      widget.setFromDate(new Date());
+      event.preventDefault();
+    });
+  </script>
+
+</body>
+
 </html>
