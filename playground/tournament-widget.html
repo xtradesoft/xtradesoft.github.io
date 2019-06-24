@@ -53,18 +53,18 @@
     </div>
   </main>
 
-  <!-- HINT: here we include the widget code and we set the parameters -->
+  <!-- include tournament widget javascript -->
   <script src="http://devportal.nexxchange.com/assets/widgets/js/tournament-widget.js"></script>
   <script>
+    // add tournament widget to DOM element with ID "tournamentWidgetDataContainer"
     var widget = renderTournamentWidget("tournamentWidgetDataContainer",{
-      issuerId : "58e3eca0e4b02656d9c3382e",
-      fromDate : new Date("2019-01-01"),
-      lang : "de",
-      maxResults : 10,
-      baseUrl: "https://devportal.nexxchange.com"
-    })
+      issuerId : "54e2ee9be4b0cc4e82507498",  // get tournaments from St. Vigil
+      fromDate : new Date("2019-01-01"), // set initial from date
+      lang : "it", // render widget in Italian
+      maxResults : 5 // only show 5 tournaments  
+    });
 
-    // HINT: adding an even handler so widget can react on date changes
+    // add button click event handle to set from date to today
     document.getElementById("adjust-from-date").addEventListener("click", function(event) {
       widget.setFromDate(new Date());
       event.preventDefault();
