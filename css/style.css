@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Author: Lumberjacks
 	Template: Sawmill (HTML Template)
 	Version: 1.0
@@ -654,29 +654,32 @@
 
   .description-1 .text h3 {
     color: #294661;
-    margin-left: 60px;
+    margin: 12px 0px 24px 60px;
   }
 
   .description-1 .text p {
     margin-bottom: 50px;
     margin-left: 60px;
+	font-size: 16px;
   }
 
   .description-1 .photo-left,
   .description-1 .photo-right {
-    height: 530px;
+    height: 600px;
   }
 
   .description-1 .photo-left img {
     position: absolute;
     right: 120px;
-    height: 530px;
+    height: 550px;
+	padding: 25px 0;
   }
 
   .description-1 .photo-right img {
     position: absolute;
     left: 120px;
-    height: 530px;
+    height: 550px;
+	padding: 25px 0;
   }
 
 /* 7. CLIENTS SECTION */
@@ -1716,6 +1719,7 @@
 
   footer {
     padding: 100px 0 0;
+	background: #fff;
   }
 
   footer img {
