@@ -6,4 +6,4 @@ User-Agent: *
  Disallow: /hotel-de.html
  Disallow: /hotel-fr.html
 
-Sitemap: sitemap.xml
+Sitemap: http://b2b.nexxchange.com/sitemap.xml
