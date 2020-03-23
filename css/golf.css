@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
   width: 7px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #2ECC71;
+  background-color: #63E0A4;
   outline: none;
   -webkit-border-radius: 5px !important;
   border-radius: 5px !important;
@@ -156,7 +156,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, p {
   border-radius: 50%;
   top: 0;
   left: 0;
-  background: #2ECC71;
+  background: #63E0A4;
 }
 .cssload-ball-1 {
   -webkit-animation: cssload-ball1 0.65s infinite alternate linear;
@@ -591,14 +591,14 @@ a.anchor {
   border: none;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background-color: #4FC3F7;
+  background-color: #79CAF7;
   outline: none !important;
   -webkit-transition: background-color .2s ease !important;
   -o-transition: background-color .2s ease !important;
   transition: background-color .2s ease !important;
 }
 .slick-active button {
-  background-color: #2ECC71 !important;
+  background-color: #63E0A4 !important;
   width: 14px !important;
   height: 14px !important;
 }
@@ -612,7 +612,7 @@ a.anchor {
 }
 .navbar {
   position: absolute;
-  padding: 10px 0;
+  padding-top: 5px;
   width: 100%;
   top: -100%;
   -webkit-transition: 0.2s ease;
@@ -641,6 +641,7 @@ a.anchor {
   display: block;
   width: auto;
   float: left;
+	  padding-top: 4px;
 }
 .logo-navbar a img {
   display: block;
@@ -696,12 +697,12 @@ a.anchor {
   transition: all 0.2s ease;
 }
 .navbar-nav li a:hover {
-  color: #2ECC71;
+  color: #63E0A4;
 }
 .nav-button .btn-nav {
   -webkit-border-radius: 25px;
   border-radius: 25px;
-  background-color: #2ECC71;
+  background-color: #63E0A4;
   border: none;
   padding: 0 20px;
   height: 40px;
@@ -717,10 +718,10 @@ a.anchor {
 }
 .nav-button .btn-nav:hover {
   background-color: #ffffff;
-  color: #2ECC71;
+  color: #63E0A4;
 }
 li.active a {
-  color: #2ECC71;
+  color: #63E0A4;
 }
 .navbar-fixed-top {
   backface-visibility: hidden;
@@ -765,7 +766,7 @@ li.active a {
 .main-button .btn-default {
   -webkit-border-radius: 25px;
   border-radius: 25px;
-  background-color: #2ECC71;
+  background-color: #63E0A4;
   border: none;
   padding: 0 30px;
   height: 50px;
@@ -781,7 +782,7 @@ li.active a {
 }
 .main-button .btn-default:hover {
   background-color: #ffffff;
-  color: #2ECC71;
+  color: #63E0A4;
   -webkit-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   transform: translateY(-10px);
@@ -922,7 +923,7 @@ li.active a {
   position: absolute;
   margin-right: 0px;
   margin-left: -15px;
-  border: 2px solid #2ECC71;
+  border: 2px solid #63E0A4;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-color: #ffffff;
@@ -937,7 +938,7 @@ li.active a {
   top: 6px;
   left: -11px;
   border-top: 10px solid transparent;
-  border-right: 10px solid #2ECC71;
+  border-right: 10px solid #63E0A4;
   border-bottom: 10px solid transparent;
   z-index: 1;
 }
@@ -991,7 +992,7 @@ li.active a {
   width: 40px;
 }
 .screen-two-item-icon g {
-  stroke: #4fc3f7;
+  stroke: #79CAF7;
 }
 .screen-two-item h3 {
   padding-top: 14px;
