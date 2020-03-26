@@ -1,9 +1,4 @@
 User-Agent: *
- Disallow: /golf.html
- Disallow: /golf-de.html
- Disallow: /golf-fr.html
- Disallow: /hotel.html
- Disallow: /hotel-de.html
- Disallow: /hotel-fr.html
+Allow: /
 
 Sitemap: http://b2b.nexxchange.com/sitemap.xml
