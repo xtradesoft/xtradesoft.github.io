@@ -1,2 +1,1 @@
-RewriteEngine On
-deny from all
+test
