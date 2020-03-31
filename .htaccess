@@ -1,7 +1,2 @@
 RewriteEngine On
-
-RewriteCond %{HTTP_HOST} ^www.b2b.nexxchange.com [NC]
-RewriteRule ^(.*)$ https://b2b.nexxchange.com/$1 [L,R=301]
-
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+deny from all
