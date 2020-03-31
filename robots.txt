@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: http://b2b.nexxchange.com/sitemap.xml
+Sitemap: https://b2b.nexxchange.com/sitemap.xml
