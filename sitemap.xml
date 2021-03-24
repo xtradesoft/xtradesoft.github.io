@@ -6,52 +6,17 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://b2b.nexxchange.com/</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
+    <lastmod>2021-03-24T15:30:15+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://b2b.nexxchange.com/index.html</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
+    <lastmod>2021-03-24T15:30:15+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://b2b.nexxchange.com/index-de.html</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
+    <lastmod>2021-03-24T15:30:15+00:00</lastmod>
     <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://b2b.nexxchange.com/index-fr.html</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://b2b.nexxchange.com/golf.html</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://b2b.nexxchange.com/hotel.html</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://b2b.nexxchange.com/golf-de.html</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://b2b.nexxchange.com/hotel-de.html</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://b2b.nexxchange.com/golf-fr.html</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://b2b.nexxchange.com/hotel-fr.html</loc>
-    <lastmod>2020-03-09T15:30:15+00:00</lastmod>
-    <priority>0.64</priority>
   </url>
 </urlset>
