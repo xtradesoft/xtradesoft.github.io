@@ -247,6 +247,10 @@
          text-align: center;
      }
  }
+ .main-button .btn-default {
+    padding: 0 20px;
+}
+
  
  @media only screen and (max-width: 641px) {
      #map-canvas {
