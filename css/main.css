@@ -2315,6 +2315,12 @@ video {
     background: #323232;
     color: #fff;
 }
+.navbar.stick .navbar-toggle .icon-bar {
+    background-color: #323232;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
 
 @media (max-width: 600px) {
     .form-content {
