@@ -2335,6 +2335,10 @@ video {
 }
 .site-content.not-found .footer {
     background: #323232;
+    position: inherit;
+}
+.site-content.not-found {
+    margin-bottom: 0 !important;
 }
 .not-found-block {
     background: #323232;
