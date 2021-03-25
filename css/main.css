@@ -2198,7 +2198,8 @@ h3.title {
 }
 
 .form-popup .fa.fa-close {
-    cursor: pointer
+    cursor: pointer;
+    color: #fff;
 }
 
 .btn-default:active:hover {
