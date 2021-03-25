@@ -2321,3 +2321,6 @@ video {
 .navbar .navbar-toggle .icon-bar {
     background-color: #fff;
 }
+.navbar-nav li.sl-nav {
+    margin-right: 0;
+}
