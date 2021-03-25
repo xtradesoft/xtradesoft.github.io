@@ -61,19 +61,14 @@
         margin: 0;
         float: none;
     }
-    .navbar-nav {
-        margin: 0;
-    }
-    .navbar-menu .navbar-nav li a {
-        margin: 10px 0;
-        float: none;
-    }
-    .logo-navbar {
-        margin-bottom: 25px
+    .navbar-menu .navbar-nav .sl-nav li ul li,
+    .navbar-menu .sl-nav a {
+        padding: 5px !important;
     }
     .navbar-menu .navbar-nav li a {
         width: 100%;
         text-align: center;
+        padding: 10px 0;
     }
     .navbar-menu .navbar-nav .dropdown-column a {
         text-align: left;
