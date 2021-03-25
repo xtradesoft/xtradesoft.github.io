@@ -501,6 +501,7 @@ a.anchor {
     background-color: #323232;
     padding: 0 20px;
     border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, .15);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, .15);
     height: 180px;
     padding: 50px 20px;
@@ -1312,7 +1313,8 @@ a.anchor {
     opacity: .3
 }
 
-.sl-flag.flag-it:hover, .sl-flag.flag-fr:hover {
+.sl-flag.flag-it:hover,
+.sl-flag.flag-fr:hover {
     border: 0 !important;
     cursor: default !important;
 }
@@ -1323,7 +1325,11 @@ a.anchor {
     background-size: cover;
     opacity: .5
 }
-.sl-nav li ul li, .sl-nav li ul li:hover , .sl-nav li ul li a, .sl-nav li ul li a:hover  {
+
+.sl-nav li ul li,
+.sl-nav li ul li:hover,
+.sl-nav li ul li a,
+.sl-nav li ul li a:hover {
     cursor: default;
 }
 
@@ -1385,6 +1391,7 @@ a.anchor {
 }
 
 .team-thumbnail {
+    -webkit-box-shadow: 2px 2px 6px #A3A3A3;
     box-shadow: 2px 2px 6px #A3A3A3;
     background-color: #fff;
     border-radius: 10px;
@@ -1520,6 +1527,7 @@ a.anchor {
     border-radius: 15px;
     background: white;
     transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
     box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
     font-family: "Montserrat";
     font-weight: 300;
@@ -1573,6 +1581,7 @@ a.anchor {
 }
 
 .price-table-wrapper .pricing-table:hover {
+    -webkit-box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.8);
     box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.8);
 }
 
@@ -1975,6 +1984,7 @@ a.anchor {
 
 .content-widget {
     border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, .4);
     box-shadow: 5px 5px 7px rgba(0, 0, 0, .4);
     background-color: #323232;
     padding: 15px;
@@ -2039,7 +2049,7 @@ h3.title {
 }
 
 .form-style-7 {
-    background: #f8f8f8;
+    background: #323232;
     border-radius: 2px;
     padding: 0px 10px 0 10px;
 }
@@ -2062,10 +2072,10 @@ h3.title {
 .form-style-7 li {
     display: block;
     padding: 9px;
-    border: 1px solid #a3a3a3;
+    border: 1px solid #fff;
     margin-bottom: 20px;
     border-radius: 7px;
-    background-color: #f8f8f8;
+    background-color: #323232;
 }
 
 .form-style-7 li:last-child {
@@ -2079,9 +2089,9 @@ h3.title {
     float: left;
     margin-top: -19px;
     height: 14px;
-    background: #f8f8f8;
+    background: #323232;
     padding: 0px 5px;
-    color: #636363;
+    color: #fff;
     font-size: 14px;
 }
 
@@ -2107,17 +2117,17 @@ h3.title {
     line-height: 25px;
     font-size: 16px;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #323232;
+    background-color: #323232;
+    color: #fff;
 }
 
 .form-style-7 li>span {
-    background: #f8f8f8;
+    background: #323232;
     display: block;
     padding: 3px;
     margin: 0 -9px -9px -9px;
     text-align: right;
-    color: #a3a3a3;
+    color: #fff;
     font-size: 11px;
     border-radius: 0 0 5px 5px;
     font-weight: 400;
@@ -2135,14 +2145,14 @@ h3.title {
     border-radius: 30px;
     font-weight: 500;
     width: 60%;
-    color: #fff;
+    color: #323232;
     opacity: 2;
     font-size: 16px;
 }
 
 .form-popup h2 {
     text-align: center;
-    color: #323232;
+    color: #fff;
     padding: 0 0 10px 0;
     margin-top: -10px !important;
 }
@@ -2151,12 +2161,15 @@ h3.title {
     margin: auto;
     text-align: center;
     width: 600px;
-    background-color: #f8f8f8;
+    background-color: #323232;
+    opacity: .97;
     padding: 10px;
     border-radius: 10px;
     margin-top: 80px;
     overflow-y: auto;
     max-height: calc(100vh - 100px);
+    -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, .7);
+    box-shadow: 0 0 30px rgba(255, 255, 255, .7);
 }
 
 .form-content.plan {
@@ -2171,6 +2184,7 @@ h3.title {
     top: calc();
     top: 0;
     left: 0;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .25);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .25);
     padding-top: 10px;
     width: 100%;
@@ -2320,26 +2334,33 @@ video {
     background: #323232;
     color: #fff;
 }
+
 .navbar.stick .navbar-toggle .icon-bar {
     background-color: #323232;
 }
+
 .navbar .navbar-toggle .icon-bar {
     background-color: #fff;
 }
+
 .navbar-nav li.sl-nav {
     margin-right: 0;
 }
+
 .site-content.not-found {
     -webkit-box-shadow: none;
     box-shadow: none
 }
+
 .site-content.not-found .footer {
     background: #323232;
     position: inherit;
 }
+
 .site-content.not-found {
     margin-bottom: 0 !important;
 }
+
 .not-found-block {
     background: #323232;
     height: calc(100vh - 493px);
@@ -2349,6 +2370,7 @@ video {
     padding: 15vh 12vw;
     font-family: "Montserrat", Helvetica Neue;
 }
+
 .not-found-block-bottom {
     height: 150px;
     background: #323232;
