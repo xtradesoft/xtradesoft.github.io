@@ -2329,3 +2329,25 @@ video {
 .navbar-nav li.sl-nav {
     margin-right: 0;
 }
+.site-content.not-found {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.site-content.not-found .footer {
+    background: #323232;
+}
+.not-found-block {
+    background: #323232;
+    height: calc(100vh - 493px);
+    color: #fff;
+    text-align: center;
+    font-size: 5vw;
+    padding: 15vh 12vw;
+    font-family: "Montserrat", Helvetica Neue;
+}
+.not-found-block-bottom {
+    height: 150px;
+    background: #323232;
+    text-align: center;
+    padding-top: 5vw;
+}
