@@ -428,27 +428,28 @@ a.anchor {
     -webkit-border-radius: 0 !important;
     border-radius: 0 !important;
     position: relative;
-    background-color: #000000;
+    background-color: #fff;
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(1) {
-    top: 8px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: #000000;
+    -webkit-transform: rotate(90deg) translate(8px,-6px);
+    -ms-transform: rotate(90deg) translate(8px,-6px);
+    transform: rotate(90deg) translate(8px,-6px);
+    background-color: #fff;
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(2) {
-    background-color: transparent;
+    background-color: #fff;
+    -webkit-transform: rotate(90deg) translate(2px,0);
+    -ms-transform: rotate(90deg) translate(2px,0);
+    transform: rotate(90deg) translate(2px,0);
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(3) {
-    top: -8px;
-    background-color: #000000;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    background-color: #fff;
+    -webkit-transform: rotate(90deg) translate(-4px,6px);
+    -ms-transform: rotate(90deg) translate(-4px,6px);
+    transform: rotate(90deg) translate(-4px,6px);
 }
 
 .main-button {
@@ -2377,4 +2378,25 @@ video {
     background: #323232;
     text-align: center;
     padding-top: 5vw;
+}
+
+.legal-block {
+    background: #323232;
+    color: #fff;
+    font-size: 16px;
+    padding: 15vh 12vw;
+    font-family: "Montserrat", Helvetica Neue;
+}
+.legal-block p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.7em
+}
+.legal-block a {
+    color: #79CAF7
+}
+
+.collapsing {
+    display: none;
 }
