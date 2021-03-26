@@ -432,24 +432,24 @@ a.anchor {
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(1) {
-    -webkit-transform: rotate(90deg) translate(8px,-6px);
-    -ms-transform: rotate(90deg) translate(8px,-6px);
-    transform: rotate(90deg) translate(8px,-6px);
+    -webkit-transform: rotate(90deg) translate(8px, -6px);
+    -ms-transform: rotate(90deg) translate(8px, -6px);
+    transform: rotate(90deg) translate(8px, -6px);
     background-color: #fff;
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(2) {
     background-color: #fff;
-    -webkit-transform: rotate(90deg) translate(2px,0);
-    -ms-transform: rotate(90deg) translate(2px,0);
-    transform: rotate(90deg) translate(2px,0);
+    -webkit-transform: rotate(90deg) translate(2px, 0);
+    -ms-transform: rotate(90deg) translate(2px, 0);
+    transform: rotate(90deg) translate(2px, 0);
 }
 
 .navbar-toggle.active .icon-bar:nth-of-type(3) {
     background-color: #fff;
-    -webkit-transform: rotate(90deg) translate(-4px,6px);
-    -ms-transform: rotate(90deg) translate(-4px,6px);
-    transform: rotate(90deg) translate(-4px,6px);
+    -webkit-transform: rotate(90deg) translate(-4px, 6px);
+    -ms-transform: rotate(90deg) translate(-4px, 6px);
+    transform: rotate(90deg) translate(-4px, 6px);
 }
 
 .main-button {
@@ -558,8 +558,7 @@ a.anchor {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 60px 0;
 }
 
 .screen-one-title {
@@ -570,16 +569,16 @@ a.anchor {
 }
 
 .screen-one-image {
-    background-image: url(../img/screen-1.jpg);
-    background-position: left top;
-    background-size: cover;
+    background-image: url(../img/teesheet.png);
+    background-position: left center;
+    background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    width: 49%;
+    width: 45%;
     height: 100%;
     z-index: 1;
     top: 0;
-    right: 0;
+    right: 5%;
 }
 
 .screen-one-image div {
@@ -730,6 +729,7 @@ a.anchor {
     margin-top: 60px;
     margin-bottom: 60px;
     text-align: center;
+    padding: 0 15px;
 }
 
 .video-wrap h2 {
@@ -756,21 +756,20 @@ a.anchor {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 20px 0;
 }
 
 .screen-two-image {
     background-image: url(../img/screen-2.jpg);
-    background-position: right top;
-    background-size: cover;
+    background-position: right center;
+    background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    width: 49%;
+    width: 45%;
     height: 100%;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: 5%;
 }
 
 .screen-two-image div {
@@ -866,7 +865,7 @@ a.anchor {
 
 .team-wrap {
     margin-top: 107px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .team-title {
@@ -878,6 +877,11 @@ a.anchor {
     text-align: left;
     font-size: 18px;
     margin-bottom: 40px;
+    -webkit-box-shadow: 2px 2px 6px #a3a3a3;
+    box-shadow: 2px 2px 6px #a3a3a3;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
 }
 
 .team-title h2 {
@@ -927,8 +931,8 @@ a.anchor {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 80px;
-    margin-bottom: 140px;
+    margin-top: 0;
+    margin-bottom: 135px;
 }
 
 .questions-container {
@@ -946,6 +950,7 @@ a.anchor {
 
 .questions-container-image-first {
     left: 50px;
+    top: 70px;
     z-index: 2;
 }
 
@@ -2387,12 +2392,14 @@ video {
     padding: 15vh 12vw;
     font-family: "Montserrat", Helvetica Neue;
 }
+
 .legal-block p {
     font-size: 14px;
     color: #fff;
     font-weight: 300;
     line-height: 1.7em
 }
+
 .legal-block a {
     color: #79CAF7
 }
