@@ -998,11 +998,6 @@ a.anchor {
     display: inline-block;
 }
 
-.questions-container-accordion-set i {
-    padding-top: 5px;
-    float: right;
-}
-
 .content {
     display: block;
 }
@@ -1407,7 +1402,7 @@ a.anchor {
 
 .team-thumbnail img {
     padding: 5px;
-    width: 200px;
+    width: 80%;
 }
 
 .img-golf {
