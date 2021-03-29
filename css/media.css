@@ -56,6 +56,7 @@
     .navbar-menu .navbar-nav {
         position: relative;
         float: none;
+        margin: 0;
     }
     .navbar-menu .navbar-nav li {
         margin: 0;
@@ -68,6 +69,9 @@
     .navbar-menu .navbar-nav li a {
         width: 100%;
         text-align: center;
+        padding: 25px 0;
+    }
+    .navbar-menu .navbar-nav .dropdown-column li a {
         padding: 10px 0;
     }
     .navbar-menu .navbar-nav .dropdown-column a {
@@ -290,8 +294,16 @@
     .carousel {
         overflow: visible;
     }
+    .collapsing {
+        position: relative;
+        overflow: visible;
+        transition: none;
+    }
+    .not-found .navbar .navbar-menu .navbar-nav li, .not-found .navbar .navbar-menu .navbar-full, .not-found .navbar .navbar-menu .navbar-nav li .dropdown-toggle {
+        background: #323232 !important;
+    }
+    
 }
-
 @media only screen and (max-width: 641px) {
     #map-canvas {
         position: relative;

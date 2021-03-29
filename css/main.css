@@ -2350,13 +2350,16 @@ video {
     margin-right: 0;
 }
 
-.site-content.not-found {
+.site-content.not-found, .site-content.legal {
     -webkit-box-shadow: none;
-    box-shadow: none
+    box-shadow: none;
+    background: #323232;  
+    background: -webkit-linear-gradient(to bottom right, #3d3d3d, #000000); 
+    background: linear-gradient(to bottom right, #3d3d3d, #000000);
 }
 
 .site-content.not-found .footer {
-    background: #323232;
+    background:transparent;
     position: inherit;
 }
 
@@ -2365,7 +2368,7 @@ video {
 }
 
 .not-found-block {
-    background: #323232;
+    background:transaprent;
     height: calc(100vh - 493px);
     color: #fff;
     text-align: center;
@@ -2376,19 +2379,22 @@ video {
 
 .not-found-block-bottom {
     height: 150px;
-    background: #323232;
+    background: transparent;
     text-align: center;
     padding-top: 5vw;
 }
 
 .legal-block {
-    background: #323232;
+    background: transparent;
     color: #fff;
     font-size: 16px;
     padding: 15vh 12vw;
     font-family: "Montserrat", Helvetica Neue;
 }
 
+.not-found .navbar, .not-found .navbar-wrap {
+    background: transparent;
+}
 .legal-block p {
     font-size: 14px;
     color: #fff;
@@ -2398,8 +2404,4 @@ video {
 
 .legal-block a {
     color: #79CAF7
-}
-
-.collapsing {
-    display: none;
 }
