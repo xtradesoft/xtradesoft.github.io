@@ -1413,18 +1413,7 @@ a.anchor {
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-}
-
-.img-golf:before {
-    content: url("../img/video-golf2.png");
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-
-.img-golf:hover {
-    background: url("../img/video-golf2.png");
-    background-size: cover;
+    margin-top: 20px;
 }
 
 .img-hotel {
@@ -1435,18 +1424,7 @@ a.anchor {
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-}
-
-.img-hotel:before {
-    content: url("../img/video-hotel2.png");
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-
-.img-hotel:hover {
-    background: url("../img/video-hotel2.png");
-    background-size: cover
+    margin-top: 20px;
 }
 
 .img-multi {
@@ -1457,6 +1435,10 @@ a.anchor {
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+}
+.img-multi:hover, .img-golf:hover, .img-hotel:hover {
+    transform: translateY(-10px);
 }
 
 @media only screen and (max-width: 991px) {
@@ -1465,18 +1447,6 @@ a.anchor {
     .img-hotel {
         margin-bottom: 30px
     }
-}
-
-.img-multi:before {
-    content: url("../img/video-multi2.png");
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-
-.img-multi:hover {
-    background: url("../img/video-multi2.png");
-    background-size: cover
 }
 
 .navbar .container {
