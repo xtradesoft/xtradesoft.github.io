@@ -317,7 +317,8 @@ a.anchor {
     display: block;
     width: 165px;
     height: 35px;
-    margin: auto
+    margin: auto;
+    margin-top: 10px;
 }
 
 .navbar-menu {
@@ -1086,7 +1087,7 @@ a.anchor {
 }
 
 .footer {
-    background: linear-gradient(290deg, #323232 0%, #323232 5%, #93E9C0 5%, #93E9C0 10%, #323232 10%, #323232 11%, #A3DAF9 11%, #A3DAF9 16%, #323232 16%, #323232 100%);
+    background: linear-gradient(290deg, #323232 0%, #323232 2%, #93E9C0 2%, #93E9C0 7%, #323232 7%, #323232 8%, #A3DAF9 8%, #A3DAF9 13%, #323232 13%, #323232 100%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1108,8 +1109,17 @@ a.anchor {
 
 .footer-title h2 {
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+.footer-title h3 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 10px;
     font-weight: 300;
 }
 
@@ -1124,7 +1134,6 @@ a.anchor {
 .footer-title p {
     color: #ffffff;
     padding-top: 26px;
-    text-align: center;
     padding-bottom: 23px;
     font-weight: 100;
 }
@@ -1437,7 +1446,10 @@ a.anchor {
     margin-right: auto;
     margin-top: 20px;
 }
-.img-multi:hover, .img-golf:hover, .img-hotel:hover {
+
+.img-multi:hover,
+.img-golf:hover,
+.img-hotel:hover {
     transform: translateY(-10px);
 }
 
@@ -1901,6 +1913,10 @@ a.anchor {
     background-image: url("../img/multiSite.jpg");
 }
 
+.image27 {
+    background-image: url("../img/online-payment.jpg");
+}
+
 .product-image-left {
     background-position: left top;
     background-size: contain;
@@ -1908,7 +1924,7 @@ a.anchor {
     position: absolute;
     width: 50%;
     height: 120%;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     left: 5%;
 }
@@ -2320,16 +2336,17 @@ video {
     margin-right: 0;
 }
 
-.site-content.not-found, .site-content.legal {
+.site-content.not-found,
+.site-content.legal {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #323232;  
-    background: -webkit-linear-gradient(to bottom right, #3d3d3d, #000000); 
+    background: #323232;
+    background: -webkit-linear-gradient(to bottom right, #3d3d3d, #000000);
     background: linear-gradient(to bottom right, #3d3d3d, #000000);
 }
 
 .site-content.not-found .footer {
-    background:transparent;
+    background: transparent;
     position: inherit;
 }
 
@@ -2338,7 +2355,7 @@ video {
 }
 
 .not-found-block {
-    background:transaprent;
+    background: transaprent;
     height: calc(100vh - 493px);
     color: #fff;
     text-align: center;
@@ -2362,9 +2379,11 @@ video {
     font-family: "Montserrat", Helvetica Neue;
 }
 
-.not-found .navbar, .not-found .navbar-wrap {
+.not-found .navbar,
+.not-found .navbar-wrap {
     background: transparent;
 }
+
 .legal-block p {
     font-size: 14px;
     color: #fff;
@@ -2374,4 +2393,8 @@ video {
 
 .legal-block a {
     color: #79CAF7
+}
+
+.font-17 {
+    font-size: 17px;
 }
