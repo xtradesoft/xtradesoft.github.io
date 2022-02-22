@@ -2372,6 +2372,7 @@ video {
 }
 
 .legal-block {
+    width: 100%;
     background: transparent;
     color: #fff;
     font-size: 16px;
