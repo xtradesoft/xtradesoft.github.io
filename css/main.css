@@ -1917,6 +1917,14 @@ a.anchor {
     background-image: url("../img/online-payment.jpg");
 }
 
+.image28 {
+    background-image: url("../img/ballomat.png");
+}
+
+.image29 {
+    background-image: url("../img/qrcode.png");
+}
+
 .product-image-left {
     background-position: left top;
     background-size: contain;
