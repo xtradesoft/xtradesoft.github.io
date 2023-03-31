@@ -2,3 +2,52 @@
 id: members
 layout: default
 ---
+
+<div class="headpage">
+    <div class="container-max">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="headpage-title">
+                    <h2>Offer your members<br> the best experience</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-max">
+        <div class="headpage-image head-golf-features"></div>
+    </div>
+    <div class="container-max">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="headpage-item-container">
+                    <p>Nexxchange can help you provide your members with the best service</p>
+                </div>
+                <div class="headpage-button main-button"><a class="btn btn-default btn-block" role="button" onclick="openForm()"> Contact us </a></div>
+                <div class="headpage-button main-button"><a href="{% link pages/pricing.html %}" class="btn btn-default btn-block" role="button"> See pricing </a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% assign sorted_products = site.data.products | sort %}
+{% for product_hash in sorted_products %}
+    {% assign product = product_hash[1] %}
+
+    {% capture productContent %}
+        <h2>{{ product.title }}</h2>
+        <br>
+        <p>{{ product.description }}</p>
+        <br>
+        <table class="table">
+            <tbody>
+                {% for point in product.points %}
+                    <tr>
+                        <td>{%- include svg-list-item.html -%}</td>
+                        <td>{{ point }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endcapture %}
+    {% include nxc/product.html image=product.image position=product.imagePlacement content=productContent %}
+{% endfor %}

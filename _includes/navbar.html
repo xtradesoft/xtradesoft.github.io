@@ -5,11 +5,14 @@
                 <div class="col-md-12">
                     <nav class="navbar-menu">
                         <div class="navbar-header">
-                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy"> <span class="icon-bar"></span>
-                                <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                         </div>
                         <div class="logo-navbar">
-                            <a href="index"><img src="{{ "/assets/img/logo.png" | absolute_url }}" alt="logo" class="logo-sticky"><img src="{{ "/assets/img/logo_white.png" | absolute_url }}" alt="logo" class="logo-normal"></a>
+                            <a href="{% link index.html %}"><img src="{{ "/assets/img/logo.png" | relative_url }}" alt="logo" class="logo-sticky"><img src="{{ "/assets/img/logo_white.png" | relative_url }}" alt="logo" class="logo-normal"></a>
                         </div>
                         <div class="collapse bs-example-js-navbar-scrollspy">
                             <ul class="nav navbar-nav">
@@ -63,7 +66,7 @@
                                 <ul class="nav navbar-nav">
                                     <li><a href="{% link index.html %}#video">Videos</a></li>
                                     <li><a href="{% link index.html %}#team">About</a></li>
-                                    <li><a href="pricing">Pricing</a></li>
+                                    <li><a href="{% link pages/pricing.html %}">Pricing</a></li>
                                     <li>
                                         <a class="bluefont" href="tel:00431606207010"></a>
                                     </li>
