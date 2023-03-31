@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            this.contact_number.value = Math.random() * 100000 | 0;
+            emailjs.sendForm('service_bfi866u', 'template_khw2yir', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                    alert('Your message has been sent successfully.');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Sorry there was a problem. Please try again.');
+
+                });
+            document.getElementById("myForm").style.display = "none";
+
+        });
+
+    }
+</script>
+<script type="text/javascript">
+    function adjust_textarea(h) {
+        h.style.height = "20px";
+        h.style.height = (h.scrollHeight) + "px";
+    }
+</script>

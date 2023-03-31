@@ -1,0 +1,15 @@
+title: Nexxchange
+email: info@nexxchange.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Nexxchange, The all-in-one Cloud Golf Club Management Software for Golf Clubs,
+  hotels and restaurants
+baseurl: ""
+# url: "https://b2b.nexxchange.com"
+twitter_username: nexxchange
+github_username:  xtradesoft
+
+# Build settings
+theme: ~
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

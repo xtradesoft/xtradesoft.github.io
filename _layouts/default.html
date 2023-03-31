@@ -1,0 +1,53 @@
+---
+id: layout-default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title }} - {{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="{{ "/assets/img/favicon/favicon.ico" | relative_url }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ "/assets/img/favicon/apple-touch-icon.png" | relative_url }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/img/favicon/apple-touch-icon-72x72.png" | relative_url }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/img/favicon/apple-touch-icon-114x114.png" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/bootstrap.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/font-awesome.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/animate.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/slick.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/magnific-popup.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/media.css" | relative_url }}">
+    <link rel="canonical" href="{{ site.url }}" />
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="google-site-verification" content="{{ site.data.google.siteVerification.code }}" />
+    {%- include nxc/google.html -%}
+    {%- include nxc/pipedrive.html -%}
+    {%- include nxc/js-schema.html -%}
+    {%- include nxc/emailjs.html -%}
+    {%- include nxc/contact-script.html -%}
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="loaded">
+    <div class="site-content {{ page.contentClass }}">
+        {%- include navbar.html -%}
+        
+        {{ content }}
+    </div>
+    
+    <a class="anchor" id="footer"></a>
+    {%- include footer.html -%}
+
+    {%- include contact.html -%}
+
+    {%- include nxc/footer-scripts.html -%}
+</body>
+
+</html>
