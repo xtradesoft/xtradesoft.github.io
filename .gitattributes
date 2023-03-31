@@ -1,0 +1,9 @@
+assets/video/banner-de.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/video/banner-fr.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/video/hotel.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/video/teaser_de.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/video/teaser_it.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/video/association_fr.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/video/banner.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/video/multisite.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/video/teaser.mp4 filter=lfs diff=lfs merge=lfs -text
