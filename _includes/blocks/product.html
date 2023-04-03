@@ -1,0 +1,14 @@
+<div class="product">
+    <div class="container">
+        <div class="product-image-{% cycle "left", "right" %} {{ include.image | default("image1") }}"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="{% cycle "col-md-offset-7", "" %} col-md-5">
+                <div class="product-item">
+                    {{ include.content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

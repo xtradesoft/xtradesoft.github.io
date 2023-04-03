@@ -1,4 +1,36 @@
 ---
 id: municipal
 layout: default
+title: Municipal Golf
+navbarClass: stick
 ---
+
+{%- include page-header.html
+    title="The most complete solution<br>for municipal golf courses"
+    subtitle="The set of cloud based tools you need to run your municipal golf course"
+-%}
+
+{% assign sorted_products = site.data.products.municipal | sort %}
+{% for product_hash in sorted_products %}
+    {% assign product = product_hash[1] %}
+
+    {% capture productContent %}
+        <h2>{{ product.title }}</h2>
+        <br>
+        <p>{{ product.description }}</p>
+        <br>
+        <table class="table">
+            <tbody>
+                {% for point in product.points %}
+                    <tr>
+                        <td>{%- include svg-list-item.html -%}</td>
+                        <td>{{ point }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endcapture %}
+    {% include blocks/product-flipped.html image=product.image content=productContent %}
+{% endfor %}
+
+{% include what-we-can-do.html %}

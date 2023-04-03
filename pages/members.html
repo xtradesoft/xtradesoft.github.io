@@ -1,35 +1,16 @@
 ---
 id: members
 layout: default
+title: Members Golf
+navbarClass: stick
 ---
 
-<div class="headpage">
-    <div class="container-max">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="headpage-title">
-                    <h2>Offer your members<br> the best experience</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-max">
-        <div class="headpage-image head-golf-features"></div>
-    </div>
-    <div class="container-max">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="headpage-item-container">
-                    <p>Nexxchange can help you provide your members with the best service</p>
-                </div>
-                <div class="headpage-button main-button"><a class="btn btn-default btn-block" role="button" onclick="openForm()"> Contact us </a></div>
-                <div class="headpage-button main-button"><a href="{% link pages/pricing.html %}" class="btn btn-default btn-block" role="button"> See pricing </a></div>
-            </div>
-        </div>
-    </div>
-</div>
+{%- include page-header.html
+    title="Offer your members<br> the best experience"
+    subtitle="Nexxchange can help you provide your members with the best service"
+-%}
 
-{% assign sorted_products = site.data.products | sort %}
+{% assign sorted_products = site.data.products.members | sort %}
 {% for product_hash in sorted_products %}
     {% assign product = product_hash[1] %}
 
@@ -49,5 +30,7 @@ layout: default
             </tbody>
         </table>
     {% endcapture %}
-    {% include nxc/product.html image=product.image position=product.imagePlacement content=productContent %}
+    {% include blocks/product.html image=product.image content=productContent %}
 {% endfor %}
+
+{% include what-we-can-do.html %}

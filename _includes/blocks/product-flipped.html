@@ -1,10 +1,10 @@
 <div class="product">
     <div class="container">
-        <div class="product-image-{{ include.position | default("left") }} {{ include.image | default("image1") }}"></div>
+        <div class="product-image-{% cycle "right", "left" %} {{ include.image | default("image1") }}"></div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="{% if include.position == "left" %}col-md-offset-7{% endif %} col-md-5">
+            <div class="{% cycle "", "col-md-offset-7" %} col-md-5">
                 <div class="product-item">
                     {{ include.content }}
                 </div>

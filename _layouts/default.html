@@ -37,7 +37,7 @@ id: layout-default
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="loaded">
     <div class="site-content {{ page.contentClass }}">
-        {%- include navbar.html -%}
+        {%- include navbar.html navbarClass=page.navbarClass -%}
         
         {{ content }}
     </div>
