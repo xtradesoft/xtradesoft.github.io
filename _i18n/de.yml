@@ -1,0 +1,115 @@
+site:
+  title: Nexxchange
+  description: Nexxchange, The all-in-one Cloud Golf Club Management Software for Golf Clubs, hotels and restaurants
+
+global:
+  contact-us: Uns kontaktieren
+  see-pricing: See pricing
+  see-features: Features sehen
+  watch-our-videos: Sehen Sie sich unsere Videos an!
+
+footer:
+  brochures:
+    general: General
+    online-payments: Onlinebezahlungen
+    ball-machine: Ball-Maschine
+  legal:
+    title: Legal
+    disclosure: Impressum
+    copyright: Copyright © <br>2013-2023<br>All rights reserved.
+
+home:
+  header: 
+    title: Das All-in-One PMS für
+    button: Entdecken
+  all-in-one:
+    title: Die einzige <span class="greenfont">All-In-One</span> Lösung
+    item1:
+      title: Eine Komplettlösung
+      description: Nexxchange ist die umfassendste Golfverwaltungssoftware auf dem Markt.
+    item2:
+      title: Komplett zentralisiert
+      description: Alle Module unserer Software sind aus einem Guss entwickelt und verwenden eine zentralisierte Kundendatenbank.
+    item3:
+      title: Keine Schnittstellen
+      description: Unsere Software ist kein Flickwerk aus Modulen. Die gesamte Software wird von unserem eigenen Team entwickelt. Wir outsourcen nicht.
+  room-management:
+    item1:
+      title: Room management
+      description: Es spielt keine Rolle, wie groß Ihr Hotel ist. Mit Nexxchange können Sie jeden Zimmertyp verwalten, vom Einzelzimmer bis zur Präsidentensuite.
+    item2:
+      title: Zimmerraten
+      description: Sie haben immer den Überblick Ihrer Raten, der Verfügbarkeit und der Stornokonditionen.
+    item3:
+      title: Mit allen Gerät kompatibel
+      description: Da für jede Aufgabe das perfekte Gerät anders aussieht, kann Nexxchange mit jedem Gerät bedient werden, das einen Browser hat.
+    item4:
+      title: Housekeeping
+      description: Sie haben immer den Überblick, können die Ressourcen in Echtzeit steuern, Aufgaben optimieren und somit die Servicequalität verbessern.
+    item5:
+      title: Fast Check-In
+      description: Machen Sie den Registrierungsprozess einfach, bequem und schnell. Verbessern Sie die Customer Journey.
+  features:
+    item1:
+      title: Steigern Sie Ihren Umsatz mit dem Marketplatz
+      description: Buchen Sie eine Startzeit, ein Turnier oder einen zusätzlichen Service mit ihrem Computer, Smartphone oder Tablet. Passen Sie die Preise in Echtzeit für jedes Produkt an.
+    item2:
+      title: Das Widget für die Homepage ist inkludiert
+      description: Installieren Sie das Buchungs-Widget einfach in wenigen Minuten auf jeder Website. Um Telefonanrufe und No-Shows zu verringern. Verlangen Sie eine Vorauszahlung, um Einnahmeverluste zu vermeiden.
+    item3:
+      title: Mit jedem Gerät kompatibel
+      description: Die Buchung erfolgt einfach und schnell von jedem Gerät. Die eingetragenen Daten, werden automatisch im Profil hinterlegt.
+  about-us: 
+    title: Über uns
+    description: >-
+      Nexxchange ist ein Tech-Unternehmen, das sich auf Software-as-a-Service (SaaS) Lösungen für die Golfindustrie und das Gastgewerbe spezialisiert.<br>
+      <br>
+      Wir arbeiten mit einem kundenorientierten Ansatz in der Art und Weise, wie wir unsere Software entwickeln, aber auch wie wir unsere Dienstleistungen erbringen. Unsere Lösung deckt die Bedürfnisse für Unternehmen
+      jeder Größe von Golf- oder Hotelbetreibern ab, aber wir bieten auch Lösungen für Tourismusverbände und Golfverbände an.<br>
+      <br>
+      Wo Nexxchange sich auszeichnet, ist das Multi-Site-Management. Unsere Lösung kann die komplexesten Firmen Strukturen abbilden, auch wenn diese in verschiedenen Geschäftseinheiten in verschiedenen Ländern tätig
+      sind. Die webbasierte Lösung ermöglicht standortübergreifende Verwaltung.
+  our-team:
+    title: Unser Team
+
+blocks:
+  faq:
+    title: Frequently Asked Questions
+  testimonials:
+    title: What they say about us
+  what-can-we-do:
+    title: Find out what Nexxchange can do for you
+
+pages:
+  error:
+    title: "404"
+
+  golf-multi-site:
+    title: Multi-site Golf
+    headerTitle: Verwalten Sie alle Ihre Golfplätze auf die effektivste Weise
+    headerSubtitle: Mit Nexxchange haben Sie von einer zentralen Stelle aus den vollen Überblick über alle Ihre Anlagen
+
+  greenfee:
+    title: Greenfee Golf
+    headerTitle: Die perfekte Lösung<br> für Greenfees Clubs
+    headerSubtitle: Die fortschrittlichsten Tools, von einem leistungsstarken Abschlagsplan bis hin zu beeindruckenden Marketingfunktionen
+
+  members:
+    title: Member Golf
+    headerTitle: Bieten Sie Ihren Mitgliedern<br>das beste Erlebnis
+    headerSubtitle: Nexxchange kann Ihnen helfen, Ihren Mitgliedern den besten Service zu bieten
+
+  mixed:
+    title: Mixed Golf
+    headerTitle: Die perfekte Lösung<br> für Mitglieder & Greenfees Clubs
+    headerSubtitle: Die richtigen Werkzeuge, um alle Abteilungen Ihres Unternehmens effizient zu führen
+
+  municipal:
+    title: Municipal Golf
+    headerTitle: Die umfassendste Lösung<br> für kommunale Golfplätze
+    headerSubtitle: Das Set an cloudbasierten Tools, das Sie für den Betrieb Ihres kommunalen Golfplatzes benötigen
+
+  pricing:
+    title: Pricing
+    headerTitle: ~
+    headerSubtitle: ~

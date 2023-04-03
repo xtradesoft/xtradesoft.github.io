@@ -3,14 +3,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="questions-container-image"> <img class="questions-container-image-first" src="/assets/img/questions-img-1.jpg" alt="alt"> </div>
+                    <div class="questions-container-image"> <img class="questions-container-image-first" src="{{ "/assets/img/questions-img-1.jpg" | prepend: site.baseurl_root }}" alt="alt"> </div>
                 </div>
                 <div class="col-md-6">
                     <div class="questions-container-title">
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>{% t "blocks.faq.title" %}</h2>
                     </div>
                     <div class="questions-container-accordion">
-                        {% for q in site.data.faq %}
+                        {% for q in include.questions %}
                             <div class="questions-container-accordion-set">
                                 <a><h3>{{ q.question }}</h3></a>
                                 <div class="content {% if forloop.index == 1 %}content-on{% endif %}">

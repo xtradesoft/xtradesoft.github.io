@@ -1,36 +1,19 @@
 ---
 id: greenfee
 layout: default
-title: Greenfee Golf
+title: pages.greenfee.title
 navbarClass: stick
+
+namespace: greenfee
+permalink: /greenfee/
+permalink_de: /greenfee/
 ---
 
 {%- include page-header.html
-    title="The perfect golf course management software<br> for greenfees clubs"
-    subtitle="Take advantage of the most advanced tools, from a powerful teesheet to impressive marketing features"
+    title="pages.greenfee.headerTitle"
+    subtitle="pages.greenfee.headerSubtitle"
 -%}
 
-{% assign sorted_products = site.data.products.greenfee | sort %}
-{% for product_hash in sorted_products %}
-    {% assign product = product_hash[1] %}
-
-    {% capture productContent %}
-        <h2>{{ product.title }}</h2>
-        <br>
-        <p>{{ product.description }}</p>
-        <br>
-        <table class="table">
-            <tbody>
-                {% for point in product.points %}
-                    <tr>
-                        <td>{%- include svg-list-item.html -%}</td>
-                        <td>{{ point }}</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% endcapture %}
-    {% include blocks/product.html image=product.image content=productContent %}
-{% endfor %}
+{% translate_file pages/greenfee.html %}
 
 {% include what-we-can-do.html %}

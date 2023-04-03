@@ -1,10 +1,10 @@
-<script type="text/javascript" src="https://maps.google.com/maps/api/js?key={{ site.data.google.maps.apiKey }}"></script>
-<script src="{{ "/assets/js/libs/jquery.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/libs/bootstrap.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/libs/waypoints.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/libs/slick.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/libs/magnific-popup.min.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/common.js" | relative_url }}"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?key={{ site.google.maps.apiKey }}"></script>
+<script src="{{ "/assets/js/libs/jquery.min.js" | prepend: site.baseurl_root }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/libs/bootstrap.min.js" | prepend: site.baseurl_root }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/libs/waypoints.min.js" | prepend: site.baseurl_root }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/libs/slick.min.js" | prepend: site.baseurl_root }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/libs/magnific-popup.min.js" | prepend: site.baseurl_root }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/common.js" | prepend: site.baseurl_root }}"></script>
 <script>
     function openForm() {
         document.getElementById("myForm").style.display = "block";

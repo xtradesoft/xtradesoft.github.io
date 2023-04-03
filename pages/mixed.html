@@ -1,36 +1,19 @@
 ---
 id: mixed
 layout: default
-title: Mixed Golf
+title: pages.mixed.title
 navbarClass: stick
+
+namespace: mixed
+permalink: /mixed/
+permalink_de: /mischung/
 ---
 
 {%- include page-header.html
-    title="The perfect golf management software for members <br>& greenfee golf courses"
-    subtitle="The right tools to run efficiently all the departments of your business"
+    title="pages.mixed.headerTitle"
+    subtitle="pages.mixed.headerSubtitle"
 -%}
 
-{% assign sorted_products = site.data.products.mixed | sort %}
-{% for product_hash in sorted_products %}
-    {% assign product = product_hash[1] %}
-
-    {% capture productContent %}
-        <h2>{{ product.title }}</h2>
-        <br>
-        <p>{{ product.description }}</p>
-        <br>
-        <table class="table">
-            <tbody>
-                {% for point in product.points %}
-                    <tr>
-                        <td>{%- include svg-list-item.html -%}</td>
-                        <td>{{ point }}</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% endcapture %}
-    {% include blocks/product.html image=product.image content=productContent %}
-{% endfor %}
+{% translate_file pages/mixed.html %}
 
 {% include what-we-can-do.html %}

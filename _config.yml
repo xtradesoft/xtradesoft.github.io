@@ -5,11 +5,50 @@ description: >- # this means to ignore newlines until "baseurl:"
   hotels and restaurants
 baseurl: ""
 # url: "https://b2b.nexxchange.com"
-twitter_username: nexxchange
-github_username:  xtradesoft
+
+social:
+  twitter: nexxchange
+  github:  xtradesoft
+  facebook: nexxchange
+  instagram: nexxchange
+  linkedin: nexxchange-ag
+phoneNumber: "00431606207010"
+
+emailjs:
+  auth: user_khsPgtnBTPky9AfksK3So
+google:
+  universalAnalytics:
+    code: UA-161130383-1
+  siteVerification:
+    code: aRTSdMs3_zg2039LdR0IYQg-7HO2nNyGNTFfB5rHh3Sw
+  maps:
+    apiKey: AIzaSyDDuC8pr6YqiBr9wqfhNIJ56AqwzWKhiQo
+pipedrive:
+  baseUrl: leadbooster-chat.pipedrive.com
+  companyId: 7374118
+  playbookUUID: 94f7919c-53cf-4e9b-98d9-d2b92a419fea
+  version: 2
+
+# language settings
+languages:
+  - en
+  - de
+exclude_from_localizations:
+  - CNAME
+  - assets
+defaultLang: en
+languageNames:
+  en: English
+  de: Deutsch
 
 # Build settings
 theme: ~
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-multiple-languages-plugin
+
+whitelist:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-multiple-languages-plugin

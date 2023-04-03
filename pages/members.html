@@ -1,36 +1,19 @@
 ---
 id: members
 layout: default
-title: Members Golf
+title: pages.members.title
 navbarClass: stick
+
+namespace: members
+permalink: /members/
+permalink_de: /mitglieder/
 ---
 
 {%- include page-header.html
-    title="Offer your members<br> the best experience"
-    subtitle="Nexxchange can help you provide your members with the best service"
+    title="pages.members.headerTitle"
+    subtitle="pages.members.headerSubtitle"
 -%}
 
-{% assign sorted_products = site.data.products.members | sort %}
-{% for product_hash in sorted_products %}
-    {% assign product = product_hash[1] %}
-
-    {% capture productContent %}
-        <h2>{{ product.title }}</h2>
-        <br>
-        <p>{{ product.description }}</p>
-        <br>
-        <table class="table">
-            <tbody>
-                {% for point in product.points %}
-                    <tr>
-                        <td>{%- include svg-list-item.html -%}</td>
-                        <td>{{ point }}</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% endcapture %}
-    {% include blocks/product.html image=product.image content=productContent %}
-{% endfor %}
+{% translate_file pages/members.html %}
 
 {% include what-we-can-do.html %}

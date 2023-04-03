@@ -5,32 +5,33 @@
                 <div class="col-md-2">
                     <div class="footer-title">
                         <h2>Brochures</h2>
-                        <h3><a href="brochure_en.pdf">General</a></h3>
-                        <h3><a href="Brochure_Online_Card_Accaptance.pdf">Online payments</a></h3>
-                        <h3><a href="#">Ball machine</a></h3>
+                        <h3><a href="/assets/brochure/brochure_en.pdf">{% t "footer.brochures.general" %}</a></h3>
+                        <h3><a href="/assets/brochure/Brochure_Online_Card_Accaptance.pdf">{% t "footer.brochures.online-payments" %}</a></h3>
+                        <h3><a href="#">{% t "footer.brochures.ball-machine" %}</a></h3>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="footer-title">
                         <ul class="footer-icons">
-                            <li><a href="mailto:support@nexxchange.com"><i class="fa fa-paper-plane"
-                                        aria-hidden="true"></i></a></li>
-                            <li><a href="tel:+431606207010"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/nexxchange-ag"><i class="fa fa-linkedin"
-                                        aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.facebook.com/nexxchange"><i class="fa fa-facebook-f"
-                                        aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="mailto:{{ site.email }}"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="tel:{{ site.phoneNumber }}"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/{{ site.social.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="https://www.facebook.com/{{ site.social.facebook }}"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
                         </ul>
                         <div class="logo-footer">
-                            <a href="index"><img src="{{ "/assets/img/logo_white.png" | relative_url }}" alt="logo"></a>
+                            <a href="{% tl index %}"><img src="{{ "/assets/img/logo_white.png" | prepend: site.baseurl_root }}" alt="logo"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2 legal">
                     <div class="footer-title">
-                        <h2>Legal</h2>
-                        <h3><a href="legal">Legal disclosure</a></h3>
-                        <p>Copyright © <br>2013-2022 <br>All rights reserved. </p>
+                        <h2>{% t "footer.legal.title" %}</h2>
+                        <h3><a href="{% tl legal %}">{% t "footer.legal.disclosure" %}</a></h3>
+                        <p>{% t "footer.legal.copyright" %}</p>
                     </div>
                 </div>
             </div>
