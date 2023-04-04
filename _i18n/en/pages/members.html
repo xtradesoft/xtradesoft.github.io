@@ -1,0 +1,22 @@
+{% assign sorted_products = site.data.products.members | sort %}
+{% for product_hash in sorted_products %}
+    {% assign product = product_hash[1] %}
+
+    {% capture productContent %}
+        <h2>{{ product.title }}</h2>
+        <br>
+        <p>{{ product.description }}</p>
+        <br>
+        <table class="table">
+            <tbody>
+                {% for point in product.points %}
+                    <tr>
+                        <td>{%- include svg-list-item.html -%}</td>
+                        <td>{{ point }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endcapture %}
+    {% include blocks/product.html image=product.image content=productContent %}
+{% endfor %}
