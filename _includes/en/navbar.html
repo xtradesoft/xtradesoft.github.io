@@ -1,0 +1,108 @@
+<div class="navbar-wrap">
+    <div class="navbar {{ include.navbarClass }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar-menu">
+                        <div class="navbar-header">
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="logo-navbar">
+                            <a href="{% link index.html %}"><img src="{{ "/assets/img/logo.png" | prepend: site.baseurl_root }}" alt="logo" class="logo-sticky"><img src="{{ "/assets/img/logo_white.png" | prepend: site.baseurl_root }}" alt="logo" class="logo-normal"></a>
+                        </div>
+                        <div class="collapse bs-example-js-navbar-scrollspy">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ site.data.i18n.en.mainMenu.solutions.title }} <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu multi-column">
+                                        <div class="dropdown-column">
+                                            <div class="dropdown-column-title">{{ site.data.i18n.en.mainMenu.solutions.golf.title }}</div>
+                                            <li><a href="{% link pages/en/members.html %}">{{ site.data.i18n.en.mainMenu.solutions.golf.members }}</a></li>
+                                            <li><a href="{% link pages/en/greenfee.html %}">{{ site.data.i18n.en.mainMenu.solutions.golf.greenfee }}</a></li>
+                                            <li><a href="{% link pages/en/mixed.html %}">{{ site.data.i18n.en.mainMenu.solutions.golf.mixed }}</a></li>
+                                            <li><a href="{% link pages/en/municipal.html %}">{{ site.data.i18n.en.mainMenu.solutions.golf.municipal }}</a></li>
+                                            <li><a href="{% link pages/en/golf-multi-site.html %}">{{ site.data.i18n.en.mainMenu.solutions.golf.multiSite }}</a></li>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <div class="dropdown-column-title">{{ site.data.i18n.en.mainMenu.solutions.hotel.title }}</div>
+                                            <li><a href="{% link pages/en/city-hotel.html %}">{{ site.data.i18n.en.mainMenu.solutions.hotel.cityHotel }}</a></li>
+                                            <li><a href="{% link pages/en/resorts.html %}">{{ site.data.i18n.en.mainMenu.solutions.hotel.resorts }}</a></li>
+                                            <li><a href="{% link pages/en/hotel-multisite.html %}">{{ site.data.i18n.en.mainMenu.solutions.hotel.multiSite }}</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ site.data.i18n.en.mainMenu.features.title }} <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu multi-column">
+                                        <div class="dropdown-column">
+                                            <div class="dropdown-column-title">{{ site.data.i18n.en.mainMenu.features.golf.title }}</div>
+                                            <li><a href="{% link index.html %}#about">{{ site.data.i18n.en.mainMenu.features.golf.general }}</a></li>
+                                            <li><a href="{% link pages/en/teesheet.html %}">{{ site.data.i18n.en.mainMenu.features.golf.teesheet }}</a></li>
+                                            <li><a href="{% link pages/en/online-booking.html %}">{{ site.data.i18n.en.mainMenu.features.golf.onlineBooking }}</a></li>
+                                            <li><a href="{% link pages/en/crm.html %}">{{ site.data.i18n.en.mainMenu.features.golf.crm }}</a></li>
+                                            <li><a href="{% link pages/en/pos.html %}">{{ site.data.i18n.en.mainMenu.features.golf.pos }}</a></li>
+                                            <li><a href="{% link pages/en/accounting.html %}">{{ site.data.i18n.en.mainMenu.features.golf.accounting }}</a></li>
+                                            <li><a href="{% link pages/en/tournaments.html %}">{{ site.data.i18n.en.mainMenu.features.golf.tournaments }}</a></li>
+                                            <li><a href="{% link pages/en/statistics.html %}">{{ site.data.i18n.en.mainMenu.features.golf.statistics }}</a></li>
+                                        </div>
+                                        <div class="dropdown-column">
+                                            <div class="dropdown-column-title">{{ site.data.i18n.en.mainMenu.features.hotel.title }}</div>
+                                            <li><a href="{% link index.html %}#services">{{ site.data.i18n.en.mainMenu.features.hotel.general }}</a></li>
+                                            <li><a href="{% link pages/en/roombooking.html %}">{{ site.data.i18n.en.mainMenu.features.hotel.roomBooking }}</a></li>
+                                            <li><a href="{% link pages/en/checkin.html %}">{{ site.data.i18n.en.mainMenu.features.hotel.checkIn }}</a></li>
+                                            <li><a href="{% link pages/en/housekeeping.html %}">{{ site.data.i18n.en.mainMenu.features.hotel.housekeeping }}</a></li>
+                                            <li><a href="{% link pages/en/roomrates.html %}">{{ site.data.i18n.en.mainMenu.features.hotel.roomRates }}</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-full">
+                            <div class="collapse bs-example-js-navbar-scrollspy">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="{% link index.html %}#video">{{ site.data.i18n.en.mainMenu.videos }}</a></li>
+                                    <li><a href="{% link index.html %}#team">{{ site.data.i18n.en.mainMenu.about }}</a></li>
+                                    <li><a href="{% link pages/en/pricing.html %}">{{ site.data.i18n.en.mainMenu.pricing }}</a></li>
+                                    <li>
+                                        <a class="bluefont" href="tel:{{ site.phoneNumber }}"></a>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav">
+                                    <li class="sl-nav">
+                                        <ul>
+                                            <li>
+                                                <i class="sl-flag flag-{{ page.lang }}"></i>
+                                                <ul>
+                                                    {% for lang in site.languageNames %}
+                                                        <li>
+                                                            {% if lang[0] == "en" %}
+                                                                <a href="/" title="{{ lang[1] }}">
+                                                            {% else  %}
+                                                                <a href="{{ lang[0] }}" title="{{ lang[1] }}">
+                                                            {% endif %}
+                                                                <i class="sl-flag flag-{{ lang[0] }}"></i>
+                                                            </a>
+                                                            {% if lang[0] == page.lang %}
+                                                                <span class="active"></span>
+                                                            {% else %}
+                                                                <span></span>
+                                                            {% endif %}
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,4 +7,9 @@ namespace: error-404
 permalink: /404
 ---
 
-{% translate_file "404.html" %}
+<div class="not-found-block">Sorry, we can't find the page that you're looking for.</div>
+<div class="not-found-block-bottom">
+    <a href="{% link index.html %}" class="main-center-btn btn" role="button">
+        Back to main page
+    </a>
+</div>

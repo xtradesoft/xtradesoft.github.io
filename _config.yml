@@ -46,9 +46,7 @@ theme: ~
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-multiple-languages-plugin
 
 whitelist:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-multiple-languages-plugin

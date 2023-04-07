@@ -1,0 +1,69 @@
+---
+id: en-pricing
+layout: default
+title: pricing
+lang: en
+
+permalink: /en/pricing/
+---
+
+<div class="price-table-wrapper">
+    <div class="container">
+        <h1>{{ site.data.pricing.en.title }}</h1>
+    </div>
+    <div class="price-container">
+        <div class="col-md-6 col-xs-12 no-padding">
+            <div class="pricing-table">
+                <div class="pricing-table__header">
+                    <div class="alignleft">{{ site.data.pricing.en.starter.title }}</div>
+                    <div class="alignright">{{ site.data.pricing.en.starter.price }}</div>
+                </div>
+                <div class="pricing-item-list">
+                    {% for block in site.data.pricing.en.starter.blocks %}
+                        <div class="col-md-6 col-xs-12">
+                            <div class="pricing-item">
+                                <h1>{{ block.title }}</h1>
+                                {% for feature in block.features %}
+                                    <svg width="2em" height="2em" viewBox="4 0 12 11 " class="bi bi-check" fill="#63E0A4" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z">
+                                        </path>
+                                    </svg> {{ feature }}
+                                    {% if forloop.last == false %}
+                                        <br>
+                                    {% endif %}
+                                {% endfor %}
+                                <div class="pricing-item-bottom">{{ block.price }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a target="_blank" id="starter-btn" class="pricing-table__button" onclick="openForm() ; change()">
+                    {{ site.data.i18n.en.global.select }}
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12 no-padding">
+            <div class="pricing-table">
+                <div class="pricing-table__header">
+                    <div class="alignleft">GolfSuite</div>
+                    <div class="alignright">{{ site.data.pricing.en.golfSuite.price }}</div>
+                </div>
+                <ul class="pricing-table__list">
+                    {% for feature in site.data.pricing.en.golfSuite.features %}
+                    <li>
+                        <svg width="2em" height="2em" viewBox="4 0 12 11 " class="bi bi-check" fill="#63E0A4" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z">
+                            </path>
+                        </svg> {{ feature }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <a target="_blank" id="golfsuite-btn" class="pricing-table__button" onclick="openForm() ; change()">
+                    {{ site.data.i18n.en.global.select }}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,12 +3,12 @@ id: layout-default
 ---
 
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ page.lang }}">
 
 <head>
     <meta charset="utf-8">
-    <title>{% t "site.title" %} - {% t page.title %}</title>
-    <meta name="description" content="{% t "site.description" %}">
+    <title>{{ site.data.i18n.en.site.title }} - {{ site.data.i18n.en.pages[page.title].title }}</title>
+    <meta name="description" content="{{ site.data.i18n.en.site.description }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:image" content="path/to/image.jpg">
@@ -27,7 +27,7 @@ id: layout-default
     <meta name="theme-color" content="#000">
     <meta name="msapplication-navbutton-color" content="#000">
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-    <meta name="google-site-verification" content="{{ site.data.google.siteVerification.code }}" />
+    <meta name="google-site-verification" content="{{ site.google.siteVerification.code }}" />
     {%- include nxc/google.html -%}
     {%- include nxc/pipedrive.html -%}
     {%- include nxc/js-schema.html -%}
@@ -37,15 +37,15 @@ id: layout-default
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="loaded">
     <div class="site-content {{ page.contentClass }}">
-        {%- include navbar.html navbarClass=page.navbarClass -%}
+        {%- include en/navbar.html navbarClass=page.navbarClass -%}
         
         {{ content }}
     </div>
     
     <a class="anchor" id="footer"></a>
-    {%- include footer.html -%}
+    {%- include en/footer.html -%}
 
-    {%- include contact.html -%}
+    {%- include en/contact.html -%}
 
     {%- include nxc/footer-scripts.html -%}
 </body>

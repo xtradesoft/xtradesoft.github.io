@@ -1,0 +1,63 @@
+title: Get the best solution <br> for your business needs
+
+starter:
+  title: Starter
+  price: >-
+    <span class="pricefont">from </span>€ 50<span class="pricefont">/mo</span><br>
+    <span class="pricefont-2">/site</span>
+  blocks:
+    - title: Golf
+      price: €50 / month
+      features:
+        - Tee Sheet
+        - CRM
+        - Tournaments
+        - Pro Calendar
+        - IoT
+        - SEPA Direct Debit
+
+    - title: Hotel
+      price: €50 / month
+      features:
+        - CRM
+        - Booking calendar
+        - Front desk
+        - Housekeeping
+        - Room rate plans
+
+    - title: Golf + Hotel
+      price: €100 / month
+      features:
+        - Golf features <span> (Tee sheet, CRM, tournaments, pro calendar, IoT, SEPA)</span>
+        - Hotel features <span> (CRM, bookings, front desk, housekeeping, room rates)
+
+    - title: Golf + Hotel + Restaurant
+      price: €150 / month
+      features:
+        - Golf features <span> (Tee sheet, CRM, tournaments, pro calendar, IoT, SEPA)</span>
+        - Hotel features <span> (CRM, bookings, front desk, housekeeping, room rates)
+        - Restaurant features <span> (table management, kitchen ticketing, POS)
+
+golfSuite:
+  title: GolfSuite
+  price: >-
+    <span class="pricefont">from </span>€ 200<span class="pricefont">/mo</span><br>
+    <span class="pricefont-2">/site</span>
+  features:
+    - Tee Sheet
+    - Membership Management
+    - Tournaments
+    - Calendar
+    - IoT
+    - SEPA Direct Debit
+    - Automatic Payment Reconciliation
+    - POS System
+    - Inventory Management
+    - Business Intelligence
+    - Revenue Management
+    - Multi User
+    - Multi Location
+    - Hotel
+    - Fitness
+    - Restaurant
+    - Shop

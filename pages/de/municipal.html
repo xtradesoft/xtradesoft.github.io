@@ -1,0 +1,39 @@
+---
+id: de-municipal
+layout: default-de
+title: municipal
+navbarClass: stick
+lang: de
+
+permalink: /de/gemeinde/
+---
+
+{%- include page-header.html
+    title=site.data.i18n.de.pages.municipal.headerTitle
+    subtitle=site.data.i18n.de.pages.municipal.headerSubtitle
+-%}
+
+{% assign sorted_products = site.data.products.municipal | sort %}
+{% for product_hash in sorted_products %}
+    {% assign product = product_hash[1] %}
+
+    {% capture productContent %}
+        <h2>{{ product.title }}</h2>
+        <br>
+        <p>{{ product.description }}</p>
+        <br>
+        <table class="table">
+            <tbody>
+                {% for point in product.points %}
+                    <tr>
+                        <td>{%- include svg-list-item.html -%}</td>
+                        <td>{{ point }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endcapture %}
+    {% include blocks/product-flipped.html image=product.image content=productContent %}
+{% endfor %}
+
+{% include de/what-we-can-do.html %}

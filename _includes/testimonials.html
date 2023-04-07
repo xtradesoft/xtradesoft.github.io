@@ -4,13 +4,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="testimonials-title">
-                        <h2>{% t "blocks.testimonials.title" %}</h2>
+                        <h2>{{ include.title }}</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="testimonials-slider slider">
-                    {% for testimonial_hash in site.data.testimonials[site.lang] %}
+                    {% for testimonial_hash in site.data.testimonials[page.lang] %}
                         {% assign testimonial = testimonial_hash[1] %}
                         <div class="col-md-6">
                             <div class="testimonials-item"> <span class="quotes">“</span>
