@@ -8,6 +8,8 @@ global:
   seeFeatures: See features
   watchOurVideos: Watch our videos!
   select: Select
+  call: Call
+  sendMail: Send Mail
 
 contact:
   title: Contact us
@@ -27,6 +29,8 @@ contact:
     label: Message
     help: Type your message here
   send: Send
+  success: Your message has been sent successfully.
+  error: Sorry there was a problem. Please try again.
 
 mainMenu:
   solutions: 

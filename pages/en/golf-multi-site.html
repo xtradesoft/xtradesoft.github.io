@@ -8,12 +8,9 @@ lang: en
 permalink: /en/golf-multi-site/
 ---
 
-{%- include page-header.html
-    title=site.data.i18n.en.pages.golfMultiSite.headerTitle
-    subtitle=site.data.i18n.en.pages.golfMultiSite.headerSubtitle
--%}
+{%- include page-header.html -%}
 
-{% assign sorted_products = site.data.products.multisite | sort %}
+{% assign sorted_products = site.data.products[page.lang].multisite | sort %}
 {% for product_hash in sorted_products %}
     {% assign product = product_hash[1] %}
 
@@ -36,4 +33,4 @@ permalink: /en/golf-multi-site/
     {% include blocks/product.html image=product.image content=productContent %}
 {% endfor %}
 
-{% include en/what-we-can-do.html %}
+{% include what-we-can-do.html %}

@@ -8,12 +8,9 @@ lang: de
 permalink: /de/greenfee/
 ---
 
-{%- include page-header.html
-    title=site.data.i18n.de.pages.greenfee.headerTitle
-    subtitle=site.data.i18n.de.pages.greenfee.headerSubtitle
--%}
+{%- include page-header.html -%}
 
-{% assign sorted_products = site.data.products.greenfee | sort %}
+{% assign sorted_products = site.data.products[page.lang].greenfee | sort %}
 {% for product_hash in sorted_products %}
     {% assign product = product_hash[1] %}
 
@@ -36,4 +33,4 @@ permalink: /de/greenfee/
     {% include blocks/product.html image=product.image content=productContent %}
 {% endfor %}
 
-{% include de/what-we-can-do.html %}
+{% include what-we-can-do.html %}

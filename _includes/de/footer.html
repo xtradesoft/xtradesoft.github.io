@@ -5,8 +5,8 @@
                 <div class="col-md-2">
                     <div class="footer-title">
                         <h2>Brochures</h2>
-                        <h3><a href="/assets/brochure/brochure_en.pdf">{{ site.data.i18n.en.footer.brochures.general }}</a></h3>
-                        <h3><a href="/assets/brochure/Brochure_Online_Card_Accaptance.pdf">{{ site.data.i18n.en.footer.brochures.onlinePayments }}</a></h3>
+                        <h3><a href="{{ "/assets/brochure/brochure_de.pdf" | absolute_url }}">{{ site.data.i18n.en.footer.brochures.general }}</a></h3>
+                        <h3><a href="{{ "/assets/brochure/Brochure_Online_Card_Accaptance_DE.pdf" | absolute_url }}">{{ site.data.i18n.en.footer.brochures.onlinePayments }}</a></h3>
                         <h3><a href="#">{{ site.data.i18n.en.footer.brochures.ballMachine }}</a></h3>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                 <div class="col-md-2 legal">
                     <div class="footer-title">
                         <h2>{{ site.data.i18n.en.footer.legal.title }}</h2>
-                        <h3><a href="{% link pages/en/legal.html %}">{{ site.data.i18n.en.footer.legal.disclosure }}</a></h3>
+                        <h3><a href="{{ site.baseurl }}{% link pages/en/legal.html %}">{{ site.data.i18n.en.footer.legal.disclosure }}</a></h3>
                         <p>{{ site.data.i18n.en.footer.legal.copyright }}</p>
                     </div>
                 </div>

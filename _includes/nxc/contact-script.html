@@ -6,10 +6,10 @@
             emailjs.sendForm('service_bfi866u', 'template_khw2yir', this)
                 .then(function() {
                     console.log('SUCCESS!');
-                    alert('Your message has been sent successfully.');
+                    alert('{{ site.data.i18n[page.lang].contact.success }}');
                 }, function(error) {
                     console.log('FAILED...', error);
-                    alert('Sorry there was a problem. Please try again.');
+                    alert('{{ site.data.i18n[page.lang].contact.error }}');
 
                 });
             document.getElementById("myForm").style.display = "none";

@@ -8,12 +8,9 @@ lang: de
 permalink: /de/gemeinde/
 ---
 
-{%- include page-header.html
-    title=site.data.i18n.de.pages.municipal.headerTitle
-    subtitle=site.data.i18n.de.pages.municipal.headerSubtitle
--%}
+{%- include page-header.html -%}
 
-{% assign sorted_products = site.data.products.municipal | sort %}
+{% assign sorted_products = site.data.products[page.lang].municipal | sort %}
 {% for product_hash in sorted_products %}
     {% assign product = product_hash[1] %}
 
@@ -36,4 +33,4 @@ permalink: /de/gemeinde/
     {% include blocks/product-flipped.html image=product.image content=productContent %}
 {% endfor %}
 
-{% include de/what-we-can-do.html %}
+{% include what-we-can-do.html %}

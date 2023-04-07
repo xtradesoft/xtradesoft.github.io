@@ -8,12 +8,9 @@ lang: en
 permalink: /en/members/
 ---
 
-{%- include page-header.html
-    title=site.data.i18n.en.pages.members.headerTitle
-    subtitle=site.data.i18n.en.pages.members.headerSubtitle
--%}
+{%- include page-header.html -%}
 
-{% assign sorted_products = site.data.products.members | sort %}
+{% assign sorted_products = site.data.products[page.lang].members | sort %}
 {% for product_hash in sorted_products %}
     {% assign product = product_hash[1] %}
 
@@ -36,4 +33,4 @@ permalink: /en/members/
     {% include blocks/product.html image=product.image content=productContent %}
 {% endfor %}
 
-{% include en/what-we-can-do.html %}
+{% include what-we-can-do.html %}

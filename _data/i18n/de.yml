@@ -4,10 +4,12 @@ site:
 
 global:
   contactUs: Uns kontaktieren
-  seePricing: See pricing
+  seePricing: Pricing sehen
   seeFeatures: Features sehen
   watchOurVideos: Sehen Sie sich unsere Videos an!
   select: Select
+  call: Anrufen
+  sendMail: Mail senden
 
 contact:
   title: Uns kontaktieren
@@ -27,6 +29,8 @@ contact:
     label: Nachricht
     help: Schreiben Sie ihre Nachricht hier
   send: Send
+  success: Your message has been sent successfully.
+  error: Sorry there was a problem. Please try again.
 
 mainMenu:
   solutions: 
@@ -134,9 +138,9 @@ blocks:
   faq:
     title: Frequently Asked Questions
   testimonials:
-    title: What they say about us
+    title: Das sagen andere über uns
   whatCanWeDo:
-    title: Find out what Nexxchange can do for you
+    title: Erfahren Sie was Nexxchange Ihnen bringen kann
 
 pages:
   index:

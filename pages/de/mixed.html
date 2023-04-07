@@ -8,12 +8,9 @@ lang: de
 permalink: /de/mischung/
 ---
 
-{%- include page-header.html
-    title=site.data.i18n.de.pages.mixed.headerTitle
-    subtitle=site.data.i18n.de.pages.mixed.headerSubtitle
--%}
+{%- include page-header.html -%}
 
-{% assign sorted_products = site.data.products.mixed | sort %}
+{% assign sorted_products = site.data.products[page.lang].mixed | sort %}
 {% for product_hash in sorted_products %}
     {% assign product = product_hash[1] %}
 
@@ -36,4 +33,4 @@ permalink: /de/mischung/
     {% include blocks/product.html image=product.image content=productContent %}
 {% endfor %}
 
-{% include de/what-we-can-do.html %}
+{% include what-we-can-do.html %}

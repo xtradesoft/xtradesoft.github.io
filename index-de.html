@@ -280,10 +280,10 @@ permalink: /de/
                             </div>
                             <ul class="dropdown-menu contact-caroussel dropdown-menu-right" aria-labelledby="dropdownMenu6">
                                 {% if member.contact.phone %}
-                                    <li><a href="tel:{{ member.contact.phone }}">Call</a></li>
+                                    <li><a href="tel:{{ member.contact.phone }}">{{ site.data.i18n.de.global.call }}</a></li>
                                 {% endif %}
                                 {% if member.contact.email %}
-                                    <li><a href="mailto:{{ member.contact.email }}">Send mail</a></li>
+                                    <li><a href="mailto:{{ member.contact.email }}">{{ site.data.i18n.de.global.sendMail }}</a></li>
                                 {% endif %}
                                 {% if member.contact.linkedin %}
                                     <li><a href="{{ member.contact.linkedin }}" target="_blank">LinkedIn</a></li>
@@ -307,7 +307,7 @@ permalink: /de/
 </section>
 
 <a class="anchor" id="questions"></a>
-{%- include faq.html title=site.data.i18n.de.blocks.faq.title questions=site.data.faq.de -%}
+{%- include faq.html -%}
 
 <a class="anchor" id="testimonials"></a>
-{%- include testimonials.html title=site.data.i18n.de.blocks.testimonials.title -%}
+{%- include testimonials.html -%}
