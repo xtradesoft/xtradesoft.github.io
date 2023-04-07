@@ -10,7 +10,7 @@ permalink: /de/golf-multi-site/
 
 {%- include page-header.html -%}
 
-{% assign sorted_products = site.data.products[page.lang].multisite | sort %}
+{% assign sorted_products = site.data.blocks[page.lang][page.title] | sort %}
 {% for product_hash in sorted_products %}
     {% assign product = product_hash[1] %}
 

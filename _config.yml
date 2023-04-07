@@ -4,7 +4,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Nexxchange, The all-in-one Cloud Golf Club Management Software for Golf Clubs,
   hotels and restaurants
 baseurl: "/xtradesoft-test.github.io"
-url: "https://jurrieneg4u.github.io/"
+# url: "https://jurrieneg4u.github.io"
+url: "http://127.0.0.1:5000"
 
 social:
   twitter: nexxchange
