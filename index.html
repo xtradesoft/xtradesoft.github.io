@@ -10,7 +10,7 @@ permalink: /
 <a class="anchor" id="header"></a>
 <div class="header-block-top">{{ site.data.i18n.en.home.header.title }}</div>
 <div class="header-video">
-    <video autoplay="" muted="" loop="" playsinline="" poster="{{ "/assets/img/Banner-1.png" | prepend: site.baseurl_root }}" data-video="delay-load" data-video-src="{{ "/assets/video/banner.mp4" | prepend: site.baseurl_root }}" type="video/mp4" src="{{ "/assets/video/banner.mp4" | prepend: site.baseurl_root }}">
+    <video autoplay="" muted="" loop="" playsinline="" poster="{{ "/assets/img/Banner-1.png" | absolute_url }}" data-video="delay-load" data-video-src="{{ "/assets/video/banner.mp4" | absolute_url }}" type="video/mp4" src="{{ "/assets/video/banner.mp4" | absolute_url }}">
     </video>
 </div>
 <div class="header-block-bottom">
@@ -130,7 +130,7 @@ permalink: /
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="services-image"> <img src="/assets/img/services-img.png" alt="alt"> </div>
+                    <div class="services-image"> <img src="{{ "/assets/img/services-img.png" | absolute_url }}" alt="alt"> </div>
                 </div>
                 <div class="col-md-4">
                     <div class="services-item services-right">
@@ -229,15 +229,15 @@ permalink: /
                 <div class="col-md-12">
                     <div class="col-md-4">
                         <h3>Golf</h3>
-                        <a href="{{ "/assets/video/teaser.mp4" | prepend: site.baseurl_root }}" class="img-golf popup-youtube"></a>
+                        <a href="{{ "/assets/video/teaser.mp4" | absolute_url }}" class="img-golf popup-youtube"></a>
                     </div>
                     <div class="col-md-4">
                         <h3>Hotel</h3>
-                        <a href="{{ "/assets/video/hotel.mp4" | prepend: site.baseurl_root }}" class="img-hotel popup-youtube"></a>
+                        <a href="{{ "/assets/video/hotel.mp4" | absolute_url }}" class="img-hotel popup-youtube"></a>
                     </div>
                     <div class="col-md-4">
                         <h3>Multi-Site</h3>
-                        <a href="{{ "/assets/video/multisite.mp4" | prepend: site.baseurl_root }}" class="img-multi popup-youtube"></a>
+                        <a href="{{ "/assets/video/multisite.mp4" | absolute_url }}" class="img-multi popup-youtube"></a>
                     </div>
                 </div>
             </div>
