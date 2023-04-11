@@ -1,0 +1,14 @@
+{% assign icon = include.icon | default("arrow") %}
+{% if icon == "arrow" %}
+    {% include svg/arrow.svg class=include.class %}
+{% elsif icon == "chat-box" %}
+    {% include svg/chat-box.svg class=include.class %}
+{% elsif icon == "heart" %}
+    {% include svg/heart.svg class=include.class %}
+{% elsif icon == "link" %}
+    {% include svg/link.svg class=include.class %}
+{% elsif icon == "screen" %}
+    {% include svg/screen.svg class=include.class %}
+{% elsif icon == "switch" %}
+    {% include svg/switch.svg class=include.class %}
+{% endif %}

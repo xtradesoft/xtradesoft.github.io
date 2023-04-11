@@ -1,5 +1,5 @@
 ---
-id: layout-default
+id: layout-default-en
 ---
 
 <!DOCTYPE html>
@@ -28,26 +28,26 @@ id: layout-default
     <meta name="msapplication-navbutton-color" content="#000">
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
     <meta name="google-site-verification" content="{{ site.google.siteVerification.code }}" />
-    {%- include nxc/google.html -%}
-    {%- include nxc/pipedrive.html -%}
-    {%- include nxc/js-schema.html -%}
-    {%- include nxc/emailjs.html -%}
-    {%- include nxc/contact-script.html -%}
+    {%- include scripts/google.html -%}
+    {%- include scripts/pipedrive.html -%}
+    {%- include scripts/js-schema.html -%}
+    {%- include scripts/emailjs.html -%}
+    {%- include scripts/contact-script.html -%}
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="loaded">
     <div class="site-content {{ page.contentClass }}">
-        {%- include en/navbar.html navbarClass=page.navbarClass -%}
+        {%- include navbar/en.html navbarClass=page.navbarClass -%}
         
         {{ content }}
     </div>
     
     <a class="anchor" id="footer"></a>
-    {%- include en/footer.html -%}
+    {%- include footer/de.html -%}
 
-    {%- include en/contact.html -%}
+    {%- include contact.html -%}
 
-    {%- include nxc/footer-scripts.html -%}
+    {%- include scripts/footer-scripts.html -%}
 </body>
 
 </html>

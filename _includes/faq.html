@@ -10,7 +10,7 @@
                         <h2>{{ site.data.i18n[page.lang].blocks.faq.title }}</h2>
                     </div>
                     <div class="questions-container-accordion">
-                        {% for q in site.data.faq[page.lang] %}
+                        {% for q in site.data.homePage.faq[page.lang] %}
                             <div class="questions-container-accordion-set">
                                 <a><h3>{{ q.question }}</h3></a>
                                 <div class="content {% if forloop.index == 1 %}content-on{% endif %}">

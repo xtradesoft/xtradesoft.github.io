@@ -9,14 +9,14 @@ permalink: /
 
 
 <a class="anchor" id="header"></a>
-<div class="header-block-top">{{ site.data.i18n.en.home.header.title }}</div>
+<div class="header-block-top">{{ site.data.homePage.en.header.title }}</div>
 <div class="header-video">
     <video autoplay="" muted="" loop="" playsinline="" poster="{{ "/assets/img/Banner-1.png" | absolute_url }}" data-video="delay-load" data-video-src="{{ "/assets/video/banner.mp4" | absolute_url }}" type="video/mp4" src="{{ "/assets/video/banner.mp4" | absolute_url }}">
     </video>
 </div>
 <div class="header-block-bottom">
     <a href="{% link index.html %}#video" class="main-center-btn btn" role="button">
-        {{ site.data.i18n.en.home.header.button }}
+        {{ site.data.homePage.en.header.button }}
     </a>
 </div>
 <div class="menu-sticky"></div>
@@ -24,11 +24,11 @@ permalink: /
     <div class="about-wrap">
         <div class="container">
             <div class="row">
-                {% for item in site.data.about.en %}
+                {% for item in site.data.homePage.about.en %}
                     <div class="col-md-4 col-xs-12 item">
                         <div class="about-item">
                             <div class="about-item-icon">
-                                {{ item.icon }}
+                                {% include svg-icon.html icon=item.icon class="about-item-icon-icon" %}
                             </div>
                             <div class="about-item-text">
                                 <h3>{{ item.title }}</h3>
@@ -47,7 +47,7 @@ permalink: /
         <div class="row">
             <div class="col-md-12">
                 <div class="screen-one-title">
-                    <h2>{{ site.data.i18n.en.home.allInOne.title }}</h2>
+                    <h2>{{ site.data.homePage.en.allInOne.title }}</h2>
                 </div>
             </div>
         </div>
@@ -60,20 +60,20 @@ permalink: /
             <div class="col-md-6">
                 <div class="screen-one-item"><span></span>
                     <div class="screen-one-item-container">
-                        <h3>{{ site.data.i18n.en.home.allInOne.item1.title }}</h3>
-                        <p>{{ site.data.i18n.en.home.allInOne.item1.description }}</p>
+                        <h3>{{ site.data.homePage.en.allInOne.item1.title }}</h3>
+                        <p>{{ site.data.homePage.en.allInOne.item1.description }}</p>
                     </div>
                 </div>
                 <div class="screen-one-item"> <span></span>
                     <div class="screen-one-item-container">
-                        <h3>{{ site.data.i18n.en.home.allInOne.item2.title }}</h3>
-                        <p>{{ site.data.i18n.en.home.allInOne.item2.description }}</p>
+                        <h3>{{ site.data.homePage.en.allInOne.item2.title }}</h3>
+                        <p>{{ site.data.homePage.en.allInOne.item2.description }}</p>
                     </div>
                 </div>
                 <div class="screen-one-item"> <span></span>
                     <div class="screen-one-item-container">
-                        <h3>{{ site.data.i18n.en.home.allInOne.item3.title }}</h3>
-                        <p>{{ site.data.i18n.en.home.allInOne.item3.description }}</p>
+                        <h3>{{ site.data.homePage.en.allInOne.item3.title }}</h3>
+                        <p>{{ site.data.homePage.en.allInOne.item3.description }}</p>
                     </div>
                 </div>
                 <div id="align-btn">
@@ -98,9 +98,9 @@ permalink: /
                                         d="M8.254 17.941l9.613-9.613c1.456.617 3.201.334 4.389-.854 1.187-1.186 1.469-2.859.853-4.314l-1.913 1.988h-2.121v-2.27l1.915-1.914c-1.458-.617-3.204-.334-4.391.854s-1.47 2.932-.854 4.389l-9.612 9.613c-1.456-.617-3.202-.334-4.389.854s-1.47 2.932-.854 4.389l1.914-1.914h2.27v2.121l-1.988 1.914c1.457.615 3.165.332 4.352-.854 1.187-1.185 1.432-2.934.816-4.389zM11.999 9.951l-3.745-3.744c.616-1.457.334-3.201-.854-4.389-1.186-1.187-2.857-1.47-4.314-.853l1.988 1.914v2.27h-2.27l-1.913-1.989c-.617 1.455-.333 3.164.853 4.352s2.933 1.451 4.389.836l3.746 3.734M11.999 14.193l3.747 3.748c-.616 1.457-.334 3.203.854 4.389 1.187 1.188 2.933 1.469 4.39.854l-1.915-1.914v-2.121h2.121l1.914 1.914c.616-1.457.333-3.201-.854-4.389s-2.933-1.471-4.389-.854l-3.745-3.746" />
                                 </g>
                             </svg>
-                            <h3 dir="rtl">{{ site.data.i18n.en.home.roomManagement.item1.title }}</h3>
+                            <h3 dir="rtl">{{ site.data.homePage.en.roomManagement.item1.title }}</h3>
                         </div>
-                        <p>{{ site.data.i18n.en.home.roomManagement.item1.description }}</p>
+                        <p>{{ site.data.homePage.en.roomManagement.item1.description }}</p>
                     </div>
                     <div class="services-item">
                         <div class="services-item-title">
@@ -112,9 +112,9 @@ permalink: /
                                     <circle cx="12" cy="12" r="4.5" />
                                 </g>
                             </svg>
-                            <h3 dir="rtl">{{ site.data.i18n.en.home.roomManagement.item2.title }}</h3>
+                            <h3 dir="rtl">{{ site.data.homePage.en.roomManagement.item2.title }}</h3>
                         </div>
-                        <p>{{ site.data.i18n.en.home.roomManagement.item2.description }}</p>
+                        <p>{{ site.data.homePage.en.roomManagement.item2.description }}</p>
                     </div>
                     <div class="services-item">
                         <div dir="ltr" class="services-item-title">
@@ -125,9 +125,9 @@ permalink: /
                                         d="M18.5 18.5h-2v-11h-11v-2h-3v2h-2v3h2v11h11v2h3v-2h2v-3zm-13 0v-8h8v8h-8zM5.5 18.5l8-8M16.5 7.5l7-7M2 7.5h5M2.5 10.5h3M13.5 18.5h3M13.5 21.5h3" />
                                 </g>
                             </svg>
-                            <h3 dir="rtl">{{ site.data.i18n.en.home.roomManagement.item3.title }}</h3>
+                            <h3 dir="rtl">{{ site.data.homePage.en.roomManagement.item3.title }}</h3>
                         </div>
-                        <p>{{ site.data.i18n.en.home.roomManagement.item3.description }}</p>
+                        <p>{{ site.data.homePage.en.roomManagement.item3.description }}</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -144,9 +144,9 @@ permalink: /
                                     </path>
                                 </g>
                             </svg>
-                            <h3 dir="rtl">{{ site.data.i18n.en.home.roomManagement.item4.title }}</h3>
+                            <h3 dir="rtl">{{ site.data.homePage.en.roomManagement.item4.title }}</h3>
                         </div>
-                        <p>{{ site.data.i18n.en.home.roomManagement.item4.description }}</p>
+                        <p>{{ site.data.homePage.en.roomManagement.item4.description }}</p>
                     </div>
                     <div class="services-item services-right">
                         <div class="services-item-title">
@@ -158,9 +158,9 @@ permalink: /
                                     </path>
                                 </g>
                             </svg>
-                            <h3 dir="rtl">{{ site.data.i18n.en.home.roomManagement.item5.title }}</h3>
+                            <h3 dir="rtl">{{ site.data.homePage.en.roomManagement.item5.title }}</h3>
                         </div>
-                        <p>{{ site.data.i18n.en.home.roomManagement.item5.description }}</p>
+                        <p>{{ site.data.homePage.en.roomManagement.item5.description }}</p>
                     </div>
                     <div id="align-btn2">
                         <div class="screen-one-button main-button width-49"> <a href="{% link pages/en/hotel-features.html %}" class="btn btn-default btn-block" role="button">{{ site.data.i18n.en.global.seeFeatures }}</a> </div>
@@ -187,9 +187,9 @@ permalink: /
                                     d="M17.431,2.156h-3.715c-0.228,0-0.413,0.186-0.413,0.413v6.973h-2.89V6.687c0-0.229-0.186-0.413-0.413-0.413H6.285c-0.228,0-0.413,0.184-0.413,0.413v6.388H2.569c-0.227,0-0.413,0.187-0.413,0.413v3.942c0,0.228,0.186,0.413,0.413,0.413h14.862c0.228,0,0.413-0.186,0.413-0.413V2.569C17.844,2.342,17.658,2.156,17.431,2.156 M5.872,17.019h-2.89v-3.117h2.89V17.019zM9.587,17.019h-2.89V7.1h2.89V17.019z M13.303,17.019h-2.89v-6.651h2.89V17.019z M17.019,17.019h-2.891V2.982h2.891V17.019z">
                                 </path>
                             </g>
-                        </svg> {{ site.data.i18n.en.home.features.item1.title }}
+                        </svg> {{ site.data.homePage.en.features.item1.title }}
                     </h3>
-                    <p>{{ site.data.i18n.en.home.features.item1.description }}</p>
+                    <p>{{ site.data.homePage.en.features.item1.description }}</p>
                 </div>
                 <div class="screen-two-item">
                     <h3>
@@ -200,9 +200,9 @@ permalink: /
                                     d="M17.701,3.919H2.299c-0.223,0-0.405,0.183-0.405,0.405v11.349c0,0.223,0.183,0.406,0.405,0.406h15.402c0.224,0,0.405-0.184,0.405-0.406V4.325C18.106,4.102,17.925,3.919,17.701,3.919 M17.296,15.268H2.704V7.162h14.592V15.268zM17.296,6.352H2.704V4.73h14.592V6.352z M5.947,5.541c0,0.223-0.183,0.405-0.405,0.405H3.515c-0.223,0-0.405-0.182-0.405-0.405c0-0.223,0.183-0.405,0.405-0.405h2.027C5.764,5.135,5.947,5.318,5.947,5.541">
                                 </path>
                             </g>
-                        </svg> {{ site.data.i18n.en.home.features.item2.title }}
+                        </svg> {{ site.data.homePage.en.features.item2.title }}
                     </h3>
-                    <p>{{ site.data.i18n.en.home.features.item2.description }}</p>
+                    <p>{{ site.data.homePage.en.features.item2.description }}</p>
                 </div>
                 <div class="screen-two-item">
                     <h3>
@@ -213,9 +213,9 @@ permalink: /
                                     d="M14.911,1.295H5.09c-0.737,0-1.339,0.603-1.339,1.339v14.733c0,0.736,0.603,1.338,1.339,1.338h9.821c0.737,0,1.339-0.602,1.339-1.338V2.634C16.25,1.898,15.648,1.295,14.911,1.295 M15.357,17.367c0,0.24-0.205,0.445-0.446,0.445H5.09c-0.241,0-0.446-0.205-0.446-0.445v-0.893h10.714V17.367z M15.357,15.58H4.644V4.42h10.714V15.58z M15.357,3.527H4.644V2.634c0-0.241,0.205-0.446,0.446-0.446h9.821c0.241,0,0.446,0.206,0.446,0.446V3.527z">
                                 </path>
                             </g>
-                        </svg> {{ site.data.i18n.en.home.features.item2.title }}
+                        </svg> {{ site.data.homePage.en.features.item2.title }}
                     </h3>
-                    <p>{{ site.data.i18n.en.home.features.item3.description }}</p>
+                    <p>{{ site.data.homePage.en.features.item3.description }}</p>
                 </div>
             </div>
         </div>
@@ -229,15 +229,15 @@ permalink: /
                 <h2>{{ site.data.i18n.en.global.watchOurVideos }}</h2>
                 <div class="col-md-12">
                     <div class="col-md-4">
-                        <h3>Golf</h3>
+                        <h3>{{ site.data.i18n.en.global.golf }}</h3>
                         <a href="{{ "/assets/video/teaser.mp4" | absolute_url }}" class="img-golf popup-youtube"></a>
                     </div>
                     <div class="col-md-4">
-                        <h3>Hotel</h3>
+                        <h3>{{ site.data.i18n.en.global.hotel }}</h3>
                         <a href="{{ "/assets/video/hotel.mp4" | absolute_url }}" class="img-hotel popup-youtube"></a>
                     </div>
                     <div class="col-md-4">
-                        <h3>Multi-Site</h3>
+                        <h3>{{ site.data.i18n.en.global.multiSite }}</h3>
                         <a href="{{ "/assets/video/multisite.mp4" | absolute_url }}" class="img-multi popup-youtube"></a>
                     </div>
                 </div>
@@ -252,22 +252,22 @@ permalink: /
             <div class="row">
                 <div class="col-md-12">
                     <div class="team-title">
-                        <h2>{{ site.data.i18n.en.home.aboutUs.title }}</h2>
+                        <h2>{{ site.data.homePage.en.aboutUs.title }}</h2>
                     </div>
                     <div class="team-text">
-                        <p>{{ site.data.i18n.en.home.aboutUs.description }}</p>
+                        <p>{{ site.data.homePage.en.aboutUs.description }}</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="team-title">
-                        <h2>{{ site.data.i18n.en.home.ourTeam.title }}</h2>
+                        <h2>{{ site.data.homePage.en.ourTeam.title }}</h2>
                     </div>
                 </div>
             </div>
 
-            {% for member in site.data.team.members %}
+            {% for member in site.data.homePage.team.members %}
                 {% if member.contact %}
                     <div class="col-md-3 col-xs-6">
                         <div class="dropdown">

@@ -1,0 +1,53 @@
+---
+id: layout-content-de
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.data.i18n.de.site.title }} - {{ site.data.pages[page.title].info[page.lang].title }}</title>
+    <meta name="description" content="{{ site.data.i18n.de.site.description }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="{{ "/assets/img/favicon/favicon.ico" | absolute_url }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ "/assets/img/favicon/apple-touch-icon.png" | absolute_url }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/img/favicon/apple-touch-icon-72x72.png" | absolute_url }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/img/favicon/apple-touch-icon-114x114.png" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/bootstrap.min.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/font-awesome.min.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/animate.min.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/slick.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/libs/magnific-popup.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/media.css" | absolute_url }}">
+    <link rel="canonical" href="{{ site.url }}" />
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="google-site-verification" content="{{ site.google.siteVerification.code }}" />
+    {%- include scripts/google.html -%}
+    {%- include scripts/pipedrive.html -%}
+    {%- include scripts/js-schema.html -%}
+    {%- include scripts/emailjs.html -%}
+    {%- include scripts/contact-script.html -%}
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="loaded">
+    <div class="site-content {{ page.contentClass }}">
+        {%- include navbar/de.html navbarClass=page.navbarClass -%}
+        
+        {{ content }}
+    </div>
+    
+    <a class="anchor" id="footer"></a>
+    {%- include footer/de.html -%}
+
+    {%- include contact.html -%}
+
+    {%- include scripts/footer-scripts.html -%}
+</body>
+
+</html>

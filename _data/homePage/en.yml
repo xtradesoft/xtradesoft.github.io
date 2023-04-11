@@ -1,0 +1,61 @@
+# Video Banner
+header: 
+  title: The only all-in-one PMS for
+  button: Discover
+
+# The only all-in-one solution block
+allInOne:
+  title: The only <span class="greenfont">all-in-one</span> solution
+  item1:
+    title: A complete solution
+    description: Nexxchange is the most complete golf management software on the market.
+  item2:
+    title: All centralized
+    description: All the modules of our software are interconnected and use the same client database.
+  item3:
+    title: No integrations
+    description: Our software is not a patchwork of modules. The entire software is developed by the same team, no development is outsourced.
+
+# Room management block
+roomManagement:
+  item1:
+    title: Room management
+    description: It doesn't matter how vast your hotel is. Nexxchange allows you to manage every room type, from single room to presidential suite.
+  item2:
+    title: Room rates
+    description: Adjust every imaginable variant of your hotel's pricing strategy, cancellation policy or sales restrictions.
+  item3:
+    title: All devices compatible
+    description: Because for every task the right tool is different, everyone can use Nexxchange on any device, from the manager to the cleaning staff.
+  item4:
+    title: Housekeeping
+    description: View and control the department operations in real-time, streamline the performance of the cleaning staff and improve service quality.
+  item5:
+    title: Fast Check-In
+    description: Make your guest registration process convenient and fast, more productive, and improve the service.
+
+# Features block
+features:
+  item1:
+    title: Increase revenues with the Portal
+    description: Book a tee time, a tournament or any extra service with any computer, smartphone or tablet. Adjust prices to any product in real-time.
+  item2:
+    title: Included widget for your website
+    description: Easily install the booking widget on any website in minutes. Decrease phone calls and no shows. Encourage prepayment to avoid any loss of revenue.
+  item3:
+    title: Compatible with any device
+    description: Your booking experience will be smooth and enjoyable for your customers from any device. All information entered is saved in your customer database.
+
+# About Us block
+aboutUs: 
+  title: About us
+  description: >-
+    Nexxchange is a tech company that specializes in software-as-a-service (SaaS) solutions for the golf industry and the hospitality.<br>
+    <br>
+    We work with a customer oriented approach in the way we develop our software but also in the way we deliver our services. Our solution covers the needs of every size of golf or hotel operator, but we also offer services for tourist boards and golf federations.<br>
+    <br>
+    Where Nexxchange excels is in multi site management, our solution can streamline the most complex multi site and multi country operations in an intuitive web based application.
+
+# Our Team block
+ourTeam:
+  title: Our team

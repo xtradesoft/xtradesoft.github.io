@@ -1,0 +1,23 @@
+- title: 100% Cloud based
+  description: No updates, no backups, no servers needed, enhanced safety.
+  icon: arrow
+
+- title: All-in-One
+  description: Tee sheet, POS, members management, ... all centralized.
+  icon: link
+
+- title: Easy data migration
+  description: All your data is up and running in less than 24 hours.
+  icon: switch
+
+- title: Intuitive design
+  description: A design focused on the user experience.
+  icon: screen
+
+- title: 12 languages
+  description: Our software is available in English, Italian, German, French, Spanish, ...
+  icon: chat-box
+
+- title: Lovely support
+  description: Our support team is available 7 days a week and speaks your language.
+  icon: heart

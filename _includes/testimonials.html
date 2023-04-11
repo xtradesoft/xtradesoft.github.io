@@ -10,8 +10,7 @@
             </div>
             <div class="row">
                 <div class="testimonials-slider slider">
-                    {% for testimonial_hash in site.data.testimonials[page.lang] %}
-                        {% assign testimonial = testimonial_hash[1] %}
+                    {% for testimonial in site.data.homePage.testimonials[page.lang] %}
                         <div class="col-md-6">
                             <div class="testimonials-item"> <span class="quotes">“</span>
                                 <p>{{ testimonial.text }}</p>

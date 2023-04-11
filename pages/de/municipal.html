@@ -1,6 +1,6 @@
 ---
 id: de-municipal
-layout: default-de
+layout: content-de
 title: municipal
 navbarClass: stick
 lang: de
@@ -10,7 +10,7 @@ permalink: /de/gemeinde/
 
 {%- include page-header.html -%}
 
-{% assign sorted_products = site.data.blocks[page.lang][page.title] | sort %}
+{% assign sorted_products = site.data.pages[page.title].blocks[page.lang] | sort %}
 {% for product_hash in sorted_products %}
     {% assign product = product_hash[1] %}
 
