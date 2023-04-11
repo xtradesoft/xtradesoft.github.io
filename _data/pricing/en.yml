@@ -28,15 +28,15 @@ starter:
     - title: Golf + Hotel
       price: €100 / month
       features:
-        - Golf features <span> (Tee sheet, CRM, tournaments, pro calendar, IoT, SEPA)</span>
-        - Hotel features <span> (CRM, bookings, front desk, housekeeping, room rates)
+        - Golf features <span>(Tee sheet, CRM, tournaments, pro calendar, IoT, SEPA)</span>
+        - Hotel features <span>(CRM, bookings, front desk, housekeeping, room rates)</span>
 
     - title: Golf + Hotel + Restaurant
       price: €150 / month
       features:
-        - Golf features <span> (Tee sheet, CRM, tournaments, pro calendar, IoT, SEPA)</span>
-        - Hotel features <span> (CRM, bookings, front desk, housekeeping, room rates)
-        - Restaurant features <span> (table management, kitchen ticketing, POS)
+        - Golf features <span>(Tee sheet, CRM, tournaments, pro calendar, IoT, SEPA)</span>
+        - Hotel features <span>(CRM, bookings, front desk, housekeeping, room rates)</span>
+        - Restaurant features <span>(table management, kitchen ticketing, POS)</span>
 
 golfSuite:
   title: GolfSuite
