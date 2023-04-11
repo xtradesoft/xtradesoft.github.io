@@ -1,13 +1,3 @@
-<style type="text/css">
-  table {
-    width: 100%;
-  }
-
-  td > img {
-    max-height: 200px;
-  }
-</style>
-
 # Translations
 
 ## General translations
