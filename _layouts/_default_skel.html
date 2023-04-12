@@ -7,8 +7,8 @@ id: layout-default-en
 
 <head>
     <meta charset="utf-8">
-    <title>{{ site.data.i18n.en.site.title }} - {{ site.data.i18n.en.pages[page.title].title }}</title>
-    <meta name="description" content="{{ site.data.i18n.en.site.description }}">
+    <title>{{ site.data.i18n.[lang].site.title }} - {{ site.data.i18n.[lang].pages[page.title].title }}</title>
+    <meta name="description" content="{{ site.data.i18n.[lang].site.description }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:image" content="path/to/image.jpg">
@@ -37,13 +37,13 @@ id: layout-default-en
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="loaded">
     <div class="site-content {{ page.contentClass }}">
-        {%- include navbar/en.html navbarClass=page.navbarClass -%}
+        {%- include navbar/[lang].html navbarClass=page.navbarClass -%}
         
         {{ content }}
     </div>
     
     <a class="anchor" id="footer"></a>
-    {%- include footer/en.html -%}
+    {%- include footer/[lang].html -%}
 
     {%- include contact.html -%}
 

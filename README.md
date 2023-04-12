@@ -1,11 +1,46 @@
+# Introduction to YAML
+
+The entire site is configured and translated using YAML, this can be seen in the [Frontmatter](#frontmatter) and in `.yml` files.
+YAML is a markup language that makes it easier for people to read and write structured data. Below is a short example of the various options in YAML and how it is written.
+
+The most basic structure is a key with a value. The site can find this value using the `key` which is in the example below simply named "key". A key can not have spaces inside, values on the other hand can.  
+Aside from the key value pair, also a comment is shown. This comment is not visible or used by the site, but makes it easier for people to read and understand what is done.
+
+```yml
+# This is called a key value pair
+key: value 
+```
+
+Value can be various types, the ones used in the site are primarily text, lists and other structures.
+
+```yml
+# This is a structure (main) with 2 another key value pairs inside, this simply
+# makes it easier to structure data and is the basis for grouping the translations.
+main:
+  key1: This is value 1
+  key2: This is value 2
+
+# Lists are created using an indentation and a dash (-) sign
+list:
+  - Item 1
+  - Item 2
+  - Item 3
+
+# A special character combination ( >- ) is used to make multi-line text easier to write.
+description: >-
+  This is a long piece of text that can span over
+  multiple lines. The line breaks are not carried over in
+  the result of this text, but are only for readability.
+```
+
 # Translations
 
 ## General translations
 
 The general translations can be found in the files in `_data/i18n` (i.e. `_data/i18n/en.yml`), these files have the same structure for all languages and are separated in various blocks.
 
-|     |     |
-|:--- | --- |
+| Key | Description |
+|:--- |:----------- |
 | `site` | These are the site-wide translations, such as the title of the site and the SEO description
 | `global` | These are translations that are used on almost all pages, such as the title for the contact form, and the labels for pricing and feature buttons
 | `contact` | Here you will find the translations for the contact form. Each field has a `label` and a helptext (`help`). Also the success and error messages can be translated here.
@@ -14,14 +49,14 @@ The general translations can be found in the files in `_data/i18n` (i.e. `_data/
 | `blocks` | Here are titles for various blocks that are used in the site, such as the FAQ and the `What can Nexxchange do for you` block that is present under each page.
 | `pages` | These are translations for some pages that do not have their own files in the `_data/pages` directory.
 
-See also the comments (lines starting with a `#` sign) for more information in these files.
+See also the comments for more information in these files.
 
 ## Homepage
 
 Translations of the homepage are found in the `_data/homePage/[lang].yml` files. Each block on the homepage has a corresponding block in the translation file. See the [`_data/homePage/en.yml`](_data/homePage/en.yml) file for more details.
 
 <details>
-<summary>Example "features block"</summary>
+<summary>Example <strong>features block</strong></summary>
 
 ```yml
 features:
@@ -87,21 +122,21 @@ There are 4 special blocks on the homepage, which are the **About Us**, **FAQ**,
 
 Team members have two fields that are required:
 
-|     |     |
+| Key |     |
 |:--- | --- |
 | `name` | The name of the team member
 | `function` | The role or function of the team member
 
 Furthermore a team member can have a `contact` field (see the example below) with the contact details. These 
 
-|     |     |
+| Key |     |
 |:--- | --- |
 | `phone` | The phonenumber on which this team member can be reached
 | `email` | The email address where this team member can be reached. Additional parameters such as the email subject (`subject=`) and CC address (`cc=`) can be added here as well, after a `?` and separated by `&`.
 | `linkedin` | The linkedin profile of this team member
 
 <details>
-  <summary>Example team member without contact details</summary>
+  <summary>Example <strong>team member without contact details</strong></summary>
 
 ```yml
 - name: Roberto Examplar
@@ -110,7 +145,7 @@ Furthermore a team member can have a `contact` field (see the example below) wit
 </details>
 
 <details>
-  <summary>Example team member with contact details</summary>
+  <summary>Example <strong>team member with contact details</strong></summary>
 
 ```yml
 - name: Roberto Examplar
@@ -126,14 +161,16 @@ Furthermore a team member can have a `contact` field (see the example below) wit
 
 Pages are divided into multiple files:
 
-- layout files
-- translations
-- content blocks
+| Type | Directories |     |
+|:---- | ----------- | --- |
+| layout | `pages/[lang]` | The base structure of a page, this is required for a page to be available in the B2B site.
+| page translations | `_data/pages/[page]/info` | The translations for the basic information of the page, such as the header and page title.
+| content blocks | `_data/pages/[page]/blocks` | The blocks used in the page, these will show in the page content and alternate between left and right aligned images.
 
 Page translations are split up into two parts, the general information such as title and the information block at the top, and the blocks that are the actual content of the page.
 The general information can be found in the `pages` section of the general translations (See [General translations](#general-translations)) and are fairly simple.
 
-|     |     |
+| Key |     |
 |:--- | --- |
 | `title` | The title of the page, this will also be shown in the title of the browser window
 | `headerTitle` | The title of the information block. See the below screenshot.
@@ -141,22 +178,23 @@ The general information can be found in the `pages` section of the general trans
 | `headerImage` | The image to be shown in the information block.
 
 <details>
-<summary>Example "Member golf" page info</summary>
+<summary>Example <strong>Member golf</strong> page info</summary>
 
 ```yml
-members:
-  title: Member Golf
-  headerTitle: Offer your members<br> the best experience
-  headerSubtitle: Nexxchange can help you provide your members with the best service
-  headerImage: head-golf-features
+title: Member Golf
+headerTitle: Offer your members<br> the best experience
+headerSubtitle: Nexxchange can help you provide your members with the best service
+headerImage: head-golf-features
 ```
 
 ![Page Header](assets/docs/page-header.png)
 </details>
 
-> **Warning** This block must exist for every page and must have the same key as the content blocks directory and the `title:` element of the [Frontmatter](#frontmatter).
-
 > For an overview of the image, see [below](#header-images)
+
+### Page layout
+
+> **Directory**: `pages/[lang]`
 
 Each page contains two parts, the frontmatter and the content. The frontmatter is the part between the 3 dashes (`---`), the content comes after the last 3 dashes.
 
@@ -164,10 +202,9 @@ Each page contains two parts, the frontmatter and the content. The frontmatter i
 
 This is the information that the page needs to be shown properly. 
 
-|     |     |
+| Key |     |
 |:--- | --- |
-| `id` | The identifier of the page, this is the language code followed by a dash (`-`) and the filename without the `.html` part (i.e. `en-accounting`)
-| `title` | This is the key for the translated title (see [Page translations](#page-translations)), i.e. `accounting`. **One note about the title**: If the title contains spaces (such as `"Golf Multi Site"`), the spaces must be removed, and the words capitalized, for example: `golfMultiSite`.
+| `title` | This is the key for the translated title (see [Page translations](#page-translations)), i.e. `accounting`. This value is meant throughout this document whenever `[page]` is used. **One note about the title**: If the title contains spaces (such as `"Golf Multi Site"`), the spaces must be removed, and the words capitalized, for example: `golfMultiSite`.
 | `lang` | This is the language code for the page, i.e. `en` for English
 | `permalink` | This is the url for the page itself, i.e. `/en/accounting/`. This should always start with a slash (`/`) followed by the language code and another slash. 
 | `layout` | This is the layout that is used for this page, this is `default-en` for English, and `default-de` for German.
@@ -175,54 +212,15 @@ This is the information that the page needs to be shown properly.
 
 ### Content blocks
 
-The content blocks can be found in the `_data/pageBlocks` directory. Each page that uses these blocks has their own directory in each of the language directories.
+The content blocks can be found in the `_data/pages/[page]` directory. Each page that uses these blocks has their own directory in each of the language directories.
 These blocks are then shown sorted by filename in the page.
 
-See: [Updating B2B Pages](#updating-b2b-pages)
+Product pages are divided into blocks that are placed underneath each other, grouped in the `_data/pages` directory. Here you find a directory for each page (i.e. `greenfee` for the `greenfee.html` page). These blocks can be updated (or added) to change the text on the page. The number in front of the filename manages the order of the blocks on the page.
 
-# Adding B2B Pages
-
-To add a new B2B page, a `.html` file needs to be added to every directory in the `/pages` directory (i.e. `en` and `de`).
-
-Follow the following steps (example: English, page: Accounting):
-
-1. Copy the `/pages/.skel.html` file to the `/pages/en/` directory
-2. Rename the `/pages/en/.skel.html` file to `accounting.html`
-3. Open the `/pages/en/accounting.html` file
-4. Replace all instances of `[lang]` in the frontmatter for the language code: `en`
-5. Fill in the title with `accounting`
-5. You are done, you can now start adding [content blocks](#page-translations)!
-
-This will result in the following frontmatter:
+<details>
+  <summary>Example <strong>Content block</strong></summary>
 
 ```yml
----
-# page information
-id: en-accounting
-title: accounting
-lang: en
-
-# url
-permalink: /en/accounting/
-
-# settings
-layout: default-en
-navbarClass: stick
----
-```
-
-
-# Updating B2B Pages
-
-## Product pages
-
-Product pages are divided into blocks that are placed underneath each other, grouped in the `_data/products/[language]` directory. Here you find a directory for each page (i.e. `greenfee` for the `greenfee.html` page). These blocks can be updated (or added) to change the text on the page. The number in front of the filename manages the order of the blocks on the page.
-
-### Example:
-
-```yml
-# 2-stay-in-touch-with-your-customers.yml
-
 title: Stay in touch with your customers
 image: image4
 description: >-
@@ -237,6 +235,69 @@ points:
 This results in the following block:
 
 ![Stay in touch with your customers Block](assets/docs/greenfee-stay-in-touch.png)
+</details>
+
+# Add Language
+
+Languages are configured in the `_config.yml` file, under the `languages` and `languageNames` key. Here the language code and full name can be added. 
+
+Please note that the full name of the language should be in the target language.
+
+<details open>
+  <summary>Adding the <strong>Dutch</strong> language</summary>
+
+```yml
+languages:
+  - en
+  - de
+  # Add language code
+  - nl
+languageNames:
+  en: English
+  de: Deutsch
+  # Add the language name
+  nl: Nederlands
+```
+</details>
+
+### Steps
+
+1. Add the layouts for the new language by copying the `_layouts/_content_skel.html` and `_layouts/_default_skel.html` and renaming them to use the new language code (i.e. `content-nl.html` and `default-nl.html`).
+2. Replace the `[lang]` in the new files with the new language code. Please take extra care that after replacing `[lang]` does not exist in the file anymore.
+3. Copy the `pages/en` directory and rename it to the new language code (i.e. `pages/nl`). This will add the pages to the site though they will be mostly empty for now.
+4. Copy the `_data/i18n/en.yml` and rename it to the new language (i.e. `_data/i18n/nl.yml`) and translate this file. Make sure to only translate the values after the colon (`:`)
+5. Copy the `_data/homePage/en.yml` and rename it to the new language (i.e. `_data/homePage/nl.yml`) and translate this file. Make sure to only translate the values after the colon (`:`)
+6. Go through the directories inside `_data/homePage` and copy the `en.yml` to the new language (i.e. `nl.yml`) next to the copied file, and translate each file.
+
+# Adding B2B Pages
+
+To add a new B2B page, a `.html` file needs to be added to every directory in the `/pages` directory (i.e. `en` and `de`).
+
+Follow the following steps (example: English, page: Accounting):
+
+1. Copy the `/pages/_skel.html` file to the `/pages/en/` directory
+2. Rename the `/pages/en/_skel.html` file to `accounting.html`
+3. Open the `/pages/en/accounting.html` file
+4. Replace all instances of `[lang]` in the frontmatter for the language code: `en`
+5. Fill in the title with `accounting`
+5. You are done, you can now start adding [content blocks](#content-blocks)!
+
+This will result in the following frontmatter:
+
+```yml
+---
+# page information
+title: accounting
+lang: en
+
+# url
+permalink: /en/accounting/
+
+# settings
+layout: content-en
+navbarClass: stick
+---
+```
 
 # Header images
 
