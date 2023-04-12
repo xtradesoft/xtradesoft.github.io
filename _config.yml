@@ -3,9 +3,10 @@ email: info@nexxchange.com
 description: >- # this means to ignore newlines until "baseurl:"
   Nexxchange, The all-in-one Cloud Golf Club Management Software for Golf Clubs,
   hotels and restaurants
-baseurl: "/xtradesoft-test.github.io"
+# baseurl: "/xtradesoft-test.github.io"
 # url: "https://jurrieneg4u.github.io"
-url: "http://127.0.0.1:5000"
+# url: "http://127.0.0.1:5000"
+url: "https://b2b.nexxchange.com"
 
 social:
   twitter: nexxchange
@@ -30,13 +31,15 @@ pipedrive:
   playbookUUID: 94f7919c-53cf-4e9b-98d9-d2b92a419fea
   version: 2
 
+exclude:
+  - xtradesoft-gh.code-workspace
+  - README.md
+  - .vscode/settings.json
+
 # language settings
 languages:
   - en
   - de
-exclude_from_localizations:
-  - CNAME
-  - assets
 defaultLang: en
 languageNames:
   en: English

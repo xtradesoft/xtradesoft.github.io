@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.html": "liquid"
+		}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Run",
+				"command": "bundle",
+				"type": "shell",
+				"args": [
+					"exec", "jekyll", "serve", "--safe", "-P", "5000"
+				],
+				"presentation": {
+					"reveal": "always"
+				},
+				"options": {
+					"env": {
+						"JEKYLL_ENV": "production"
+					}
+				},
+				"group": "build"
+			}
+		]
+	}
+}
