@@ -1,7 +1,5 @@
 # B2B Nexxchange
 
-> Based on screenshots, "if you want to change this, do it here"
-
 ![Homepage 1](assets/docs/labelled-homepage-1.png)
 
 **MENU**: See [menu](#menu)  
