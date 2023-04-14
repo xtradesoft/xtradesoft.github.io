@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-md-2">
                     <div class="footer-title">
-                        <h2>Brochures</h2>
-                        <h3><a href="{{ "/assets/brochure/brochure_de.pdf" | absolute_url }}">{{ site.data.i18n.en.footer.brochures.general }}</a></h3>
-                        <h3><a href="{{ "/assets/brochure/Brochure_Online_Card_Accaptance_DE.pdf" | absolute_url }}">{{ site.data.i18n.en.footer.brochures.onlinePayments }}</a></h3>
-                        <h3><a href="#">{{ site.data.i18n.en.footer.brochures.ballMachine }}</a></h3>
+                        <h2>{{ site.data.i18n.de.footer.brochures.title }}</h2>
+                        <h3><a href="{{ "/assets/brochure/brochure_de.pdf" | absolute_url }}">{{ site.data.i18n.de.footer.brochures.general }}</a></h3>
+                        <h3><a href="{{ "/assets/brochure/Brochure_Online_Card_Accaptance_DE.pdf" | absolute_url }}">{{ site.data.i18n.de.footer.brochures.onlinePayments }}</a></h3>
+                        <h3><a href="#">{{ site.data.i18n.de.footer.brochures.ballMachine }}</a></h3>
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -23,15 +23,15 @@
                                 <a href="https://www.facebook.com/{{ site.social.facebook }}"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
                         </ul>
                         <div class="logo-footer">
-                            <a href="{% link index.html %}"><img src="{{ "/assets/img/logo_white.png" | absolute_url }}" alt="logo"></a>
+                            <a href="{{ site.baseurl }}{% link index-de.html %}"><img src="{{ "/assets/img/logo_white.png" | absolute_url }}" alt="logo"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2 legal">
                     <div class="footer-title">
-                        <h2>{{ site.data.i18n.en.footer.legal.title }}</h2>
-                        <h3><a href="{{ site.baseurl }}{% link pages/en/legal.html %}">{{ site.data.i18n.en.footer.legal.disclosure }}</a></h3>
-                        <p>{{ site.data.i18n.en.footer.legal.copyright }}</p>
+                        <h2>{{ site.data.i18n.de.footer.legal.title }}</h2>
+                        <h3><a href="{{ site.baseurl }}{% link pages/en/legal.html %}">{{ site.data.i18n.de.footer.legal.disclosure }}</a></h3>
+                        <p>{{ site.data.i18n.de.footer.legal.copyright }}</p>
                     </div>
                 </div>
             </div>

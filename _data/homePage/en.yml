@@ -59,3 +59,11 @@ aboutUs:
 # Our Team block
 ourTeam:
   title: Our team
+
+# FAQ block
+faq:
+  title: Frequently Asked Questions
+
+# Testimonials block
+testimonials:
+  title: What they say about us

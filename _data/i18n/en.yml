@@ -9,6 +9,7 @@ global:
   contactUs: Contact us
   seePricing: See pricing
   seeFeatures: See features
+  whatCanWeDo: Find out what Nexxchange can do for you
   watchOurVideos: Watch our videos!
   golf: Golf
   hotel: Hotel
@@ -84,6 +85,7 @@ mainMenu:
 footer:
   # Left hand navigation in the footer
   brochures:
+    title: Brochures
     general: General
     onlinePayments: Online Payments
     ballMachine: Ball Machine
@@ -92,15 +94,6 @@ footer:
     title: Legal
     disclosure: Legal disclosure
     copyright: Copyright © <br>2013-2023<br>All rights reserved.
-
-# Titles of homepage content blocks
-blocks:
-  faq:
-    title: Frequently Asked Questions
-  testimonials:
-    title: What they say about us
-  whatCanWeDo:
-    title: Find out what Nexxchange can do for you
 
 # Only the index, error and pricing page do not have their own files in the _data/pages directory.
 # Here the title for these pages can be changed
