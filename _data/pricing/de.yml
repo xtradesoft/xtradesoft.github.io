@@ -1,43 +1,5 @@
 title: Holen Sie sich die beste<br>Lösung für Ihr Business
 
-starter:
-  title: Starter
-  price: >-
-    <span class="pricefont">ab </span>€ 50<span class="pricefont">/Mo</span><br>
-    <span class="pricefont-2">/Standort</span>
-  blocks:
-    - title: Golf
-      price: €50 / Monat
-      features:
-        - Startzeiten
-        - CRM
-        - Turniere
-        - Pro Kalendar
-        - IoT
-        - SEPA-Lastschrift
-
-    - title: Hotel
-      price: €50 / Monat
-      features:
-        - CRM
-        - Zimmerbuchung
-        - Rezeption
-        - Housekeeping
-        - Zimmer Raten
-
-    - title: Golf + Hotel
-      price: €100 / Monat
-      features:
-        - Golf features <span>(Startzeiten, CRM, Turniere, Pro Kalender, IoT, SEPA)</span>
-        - Hotel features <span>(CRM, Zimmerbuchung, Rezeption, Housekeeping, Zimmer Raten)</span>
-
-    - title: Golf + Hotel + Restaurant
-      price: €150 / Monat
-      features:
-        - Golf features <span>(Startzeiten, CRM, Turniere, Pro Kalender, IoT, SEPA)</span>
-        - Hotel features <span>(CRM, Zimmerbuchung, Rezeption, Housekeeping, Zimmer Raten)</span>
-        - Restaurant features <span>(Tischverwaltung, Küchenticketing, POS)</span>
-
 golfSuite:
   title: GolfSuite
   price: >-
