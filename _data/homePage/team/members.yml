@@ -13,15 +13,19 @@
 - name: Alfred Fuhrman
   function: Chief Financial Officer
 
-- name: Benjamin Grieb
-  function: Business Development Germany
-  contact:
-    phone: +4989904210682
-    email: benjamin.grieb@nexxchange.com?subject=Nexxchange B2B&cc=benjamin.grieb@nexxchange.com
-    linkedin: https://www.linkedin.com/in/benjamin-grieb-498a751a3/
-
 - name: Rais Saker
-  function: Head of Customer Success
+  function: Chief Operating Officer
+  contact:
+    phone: +436644308488
+    email: rais.saker@nexxchange.com?subject=Nexxchange B2B&cc=rais.saker@nexxchange.com
+    linkedin: https://www.linkedin.com/in/rais-saker-b6065a152/
+
+- name: Jo Ann Holpfer
+  function: Business Development Representative
+  contact:
+    phone: +436644267499
+    email: joann.holpfer@nexxchange.com?subject=Nexxchange B2B&cc=joann.holpfer@nexxchange.com
+    linkedin: https://www.linkedin.com/in/jo-ann-holpfer-b15b2ab/
 
 - name: Adriano Minnella
   function: Customer Success Team-Lead
@@ -30,13 +34,7 @@
   function: Customer Success Specialist
 
 - name: Domenik Waitz
-  function: Customer Success Agent
-
-- name: Szabrina Szarka
-  function: Customer Success Agent
-
-- name: Marion Berger
-  function: Customer Success Agent
+  function: Customer Success Specialist
 
 - name: Sebastian Schwaighofer
   function: Payment Services
