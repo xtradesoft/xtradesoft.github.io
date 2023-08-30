@@ -1,8 +1,11 @@
-- name: Roman Kellner
-  function: CTO
+- name: Michael Briem
+  function: Founder & CEO
 
 - name: Harald Liebetegger
-  function: B2B Tech Lead
+  function: CTO
+
+- name: Roman Kellner
+  function: Head of IoT
 
 - name: Manfred Weber
   function: B2C Senior Developer
@@ -10,11 +13,8 @@
 - name: Michael Briem
   function: CEO
 
-- name: Alfred Fuhrman
-  function: Chief Financial Officer
-
 - name: Rais Saker
-  function: Chief Operating Officer
+  function: COO
   contact:
     phone: +436644308488
     email: rais.saker@nexxchange.com?subject=Nexxchange B2B&cc=rais.saker@nexxchange.com
@@ -27,6 +27,9 @@
     email: joann.holpfer@nexxchange.com?subject=Nexxchange B2B&cc=joann.holpfer@nexxchange.com
     linkedin: https://www.linkedin.com/in/jo-ann-holpfer-b15b2ab/
 
+- name: Sebastian Schwaighofer
+  function: Payment Services
+
 - name: Adriano Minnella
   function: Customer Success Team-Lead
 
@@ -35,6 +38,3 @@
 
 - name: Domenik Waitz
   function: Customer Success Specialist
-
-- name: Sebastian Schwaighofer
-  function: Payment Services
