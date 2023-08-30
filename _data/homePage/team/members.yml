@@ -13,6 +13,9 @@
 - name: Jurriën Dokter
   function: Back End Developer
 
+  - name: Alfred Fuhrmann
+  function: IoT Services
+
 - name: Rais Saker
   function: COO
   contact:
@@ -28,7 +31,7 @@
     linkedin: https://www.linkedin.com/in/jo-ann-holpfer-b15b2ab/
 
 - name: Sebastian Schwaighofer
-  function: Payment Services
+  function: Financial Services
 
 - name: Adriano Minnella
   function: Customer Success Team-Lead
