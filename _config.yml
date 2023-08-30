@@ -41,9 +41,11 @@ defaultLang: en
 languages:
   - en
   - de
+  - it
 languageNames:
   en: English
   de: Deutsch
+  it: Italienisch
 
 # Build settings
 theme: ~
