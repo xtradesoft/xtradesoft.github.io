@@ -1,54 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<!-- ::CLOUDFLARE_ERROR_500S_BOX:: -->  
 <head>
-<title>Software Update Maintenance</title>
-<meta charset="utf-8"/>
-<meta name="description" content/>
-<meta name="HandheldFriendly" content="True"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexxchange GolfSuite - Upgrade in Progress</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
-a:hover,
-body{color:#333}a,a:hover{text-decoration:none}h1{font-size:50px}body{text-align:center;padding:80px;font:20px Helvetica,sans-serif}article{display:block;text-align:left;width:80%;margin:0 auto}a{color:#dc8100}</style>
-<meta http-equiv="set-cookie" content="cf_use_ob=0; expires=Tue, 08-Aug-17 20:21:35 GMT; path=/">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://cloud003.nexxchange.com/nl574/static/images/logon_screen_4.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 900px;
+            width: 100%;
+            padding: 3rem 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #6c757d;
+            font-weight: 400;
+        }
+
+        .progress-section {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem 0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #28a745;
+            animation: progress 2s ease-in-out infinite;
+            width: 60%;
+        }
+
+        @keyframes progress {
+            0%, 100% { width: 50%; }
+            50% { width: 80%; }
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e9ecef;
+            border-top-color: #28a745;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 1rem 0;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .languages {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .language-block {
+            flex: 0 0 calc(50% - 1rem);
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .lang-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .flag {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .lang-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .lang-message {
+            font-size: 0.95rem;
+            color: #495057;
+            line-height: 1.6;
+            margin-left: 2.25rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .team-name {
+            font-size: 0.9rem;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .team-name strong {
+            color: #28a745;
+            font-style: normal;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .languages {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .language-block {
+                flex: 0 0 100%;
+                padding-bottom: 1.5rem;
+                border-bottom: 1px solid #e9ecef;
+            }
+
+
+        }
+    </style>
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
 </head>
-<body><div id="cf_alert_div" style="margin: 0;padding: 0;position: relative;top: 0;left: 0;display: block; z-index: 1000">
-    <div style="margin: 0px;padding: 10px;border-bottom: 1px solid #a5a5a5;background: #f0f0f0;font-weight: normal;text-align: left;">
-        <table width="100%">
-            <tr>
-                <td valign="top">
-                    <a href="#" onclick="document.cookie='cf_use_ob=0;path=/';window.location.reload();return false;" style="margin: 0 20px 0 0;padding: 10px 0 0 20px;text-decoration: none;font: 12px Helvetica,Arial,sans-serif;color: #eff7e8;font-weight: bold;text-align: left;position: relative;display: inline-block;height: 38px;background: url(/cdn-cgi/images/retry.png) no-repeat 0 0;overflow: visible;font-size: 14px;line-height: 1.2em;text-shadow: #437b0a 0 1px 0;white-space: nowrap;">
-                      <span style="margin: 0;padding: 0;position: absolute;top: 0;left: 100%;width: 20px;height: 38px;background: url(/cdn-cgi/images/retry.png) no-repeat 100% -38px;"></span>
-                    </a> 
-                    <noscript style="margin: 10px 0 10px 0;padding: 0;font: 12px Helvetica,Arial,sans-serif;color: #404040;display: block;">(Enable Javascript first.)</noscript>
-                </td>
-                <td valign="middle" style="margin: 0;padding: 0;">
-                    <p style="margin: 0 0 0 20px;padding: 0;font: 12px Helvetica,Arial,sans-serif;color: #404040;">This page is currently not available. We are working in the background
-                        <span id="caption" style="margin: 0;padding: 0;color: #a5a5a5;">Always Online&trade; is powered by 
-                            <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=ao_banner" target="_blank" style="margin: 0;padding: 0;text-decoration: underline;font: 12px Helvetica,Arial,sans-serif;color: #007ed9;font-weight: normal;text-align: left;">Cloudflare</a> | 
-                            <a href="javascript:void(null);" onclick="document.getElementById('cf_alert_div').style.display='none';" style="margin: 0;padding: 0;text-decoration: underline;font: 12px Helvetica,Arial,sans-serif;color: #007ed9;font-weight: normal;text-align: left;">Hide this Alert</a>
-                        </span>
-                    </p>
-                </td>
-            </tr>
-        </table>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">⛳</div>
+            <h1>Nexxchange Golf Suite</h1>
+        </div>
+
+        <div class="progress-section">
+            <p class="subtitle">Upgrade in Progress</p>
+            <div class="spinner"></div>
+        </div>
+
+        <div class="languages">
+            <!-- German -->
+            <!-- English -->
+            <div class="language-block">
+                <div class="lang-header">
+                    <span class="flag">🇬🇧</span>
+                    <span class="lang-name">English</span>
+                </div>
+                <p class="lang-message">
+                    We're currently upgrading GolfSuite to make it even better for you. Our team is working hard to deliver an enhanced experience. Sorry for the inconvenience. We'll be back online shortly!
+                </p>
+            </div>
+
+            <div class="language-block">
+                <div class="lang-header">
+                    <span class="flag">🇩🇪</span>
+                    <span class="lang-name">Deutsch</span>
+                </div>
+                <p class="lang-message">
+                    Wir machen gerade ein Update und verbessern GolfSuite für Sie. Unser Team arbeitet hart daran, Ihnen ein noch besseres Erlebnis zu bieten. Entschuldigen Sie bitte die Unterbrechung. Wir sind bald wieder zurück!
+                </p>
+            </div>
+
+            <!-- Dutch -->
+            <div class="language-block">
+                <div class="lang-header">
+                    <span class="flag">🇳🇱</span>
+                    <span class="lang-name">Nederlands</span>
+                </div>
+                <p class="lang-message">
+                    We zijn momenteel bezig met een update om GolfSuite voor u te verbeteren. Ons team werkt hard om u een nog betere ervaring te bieden. Excuses voor het ongemak. We zijn binnenkort weer terug!
+                </p>
+            </div>
+
+                        <!-- French -->
+            <div class="language-block">
+                <div class="lang-header">
+                    <span class="flag">🇫🇷</span>
+                    <span class="lang-name">Français</span>
+                </div>
+                <p class="lang-message">
+                    Nous effectuons actuellement une mise à jour pour améliorer GolfSuite. Notre équipe travaille activement pour vous offrir une expérience encore meilleure. Veuillez nous excuser pour la gêne occasionnée. Nous serons de retour bientôt!
+                </p>
+            </div>
+
+            <!-- Italian -->
+            <div class="language-block">
+                <div class="lang-header">
+                    <span class="flag">🇮🇹</span>
+                    <span class="lang-name">Italiano</span>
+                </div>
+                <p class="lang-message">
+                    Stiamo attualmente aggiornando GolfSuite per migliorare la vostra esperienza. Il nostro team sta lavorando duramente per offrirvi un servizio ancora migliore. Ci scusiamo per il disagio. Torneremo online a breve!
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <span class="team-name">— <strong>The Nexxchange Team</strong></span>
+            <span class="team-name"><a href="https://www.nexxchange.com/legalNotice">Impressum</a></span>
+        </div>
     </div>
-</div>
-<article>
-<h1>Wir machen gerade ein Update ...</h1>
-<h4>Wir sind bald wieder zurück!</h4>
-<div>
-<p>Entschuldigen Sie bitte die Unterbrechung.</p>
-<p>&mdash; Das Nexxchange Team</p>
-</div>
-<h2>Update in progress ...</h2>
-<h3>We&rsquo;ll be back soon!</h3>
-<div>
-<p>Sorry for the inconvenience but we are updating your service!</p>
-<p>&mdash; The Nexxchange Team</p>
-</div>
-</article>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
